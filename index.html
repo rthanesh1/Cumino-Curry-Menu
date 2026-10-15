@@ -19,7 +19,7 @@
         
         <!-- லோகோ படம் வரும் முக்கிய பகுதி (நடுவில் அமையும்) -->
         <div class="brand-logo" onclick="showMainPage()">
-            <img src="image/logo.JPEG" alt="Logo" class="logo-img">
+            <img src="image/logo.jpeg" alt="Logo" class="logo-img">
         </div>
 
         <div class="lang-wrapper">
@@ -279,6 +279,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
         // மொழி மாற்றும் புதிய செயல்பாடு
         function switchLanguage() {
             const selectedLanguage = document.getElementById("language-dropdown").value;
+			selectedLanguage = selectedLanguage.toLowerCase().trim(); 
             const items = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6"];
             
             // 1. முதன்மைப் பக்க கார்டுகளின் பெயர்களை மாற்றுதல்
