@@ -1,0 +1,277 @@
+/* --- CSS வடிவமைப்பு --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- CSS புதிய பின்னணி மற்றும் லோகோ வடிவமைப்பு --- */
+body {
+    background-color: ##f0efeb; /* புதிய பிரீமியம் சார்கோல் கிரே பின்னணி வண்ணம் */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f0efeb; /* நெவிகேஷன் பாருக்கு சற்று அடர் நிறம் */
+    border-bottom: 1px solid #2d2d2d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* லோகோவை நடுவில் வைக்க உதவும் ஸ்டைல் */
+.nav-space-left {
+    width: 150px; /* வலது பக்கம் இருக்கும் டிராப்டவுன் அளவிற்கு இணையான காலி இடம் */
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1; /* லோகோவை நடுப்பகுதிக்கு தள்ளும் */
+}
+
+/* லோகோ படத்தின் அளவு மற்றும் ரெஸ்பான்சிவ் ஸ்டைல் */
+.logo-img {
+    max-height: 70px; /* லோகோவின் உயரத்தை கட்டுப்படுத்த */
+    object-fit: contain;
+    width: auto;
+}
+
+/* கார்டுகளின் பின்னணி வண்ணம் புதிய தீமிற்கு ஏற்ப மாறுவதற்காக */
+.item-card {
+    display: flex;
+    background-color: #E9F1FC; /* கார்டின் உள் பின்னணி */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2d2d2d;
+    height: 120px;
+}
+
+/* மொபைல் திரைகளுக்கான லோகோ சீரமைப்பு */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    .nav-space-left {
+        display: none; /* மொபைலில் காலி இடத்தை மறைக்கிறோம் */
+    }
+    .logo-img {
+        max-height: 40px; /* மொபைல் திரைக்கு ஏற்ப லோகோ சிறுதாகும் */
+    }
+}
+
+
+.lang-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#language-dropdown {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #dfb76c;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+}
+
+/* 2. உணவுக் கார்டுகளின் பின்னணியை மட்டும் வெள்ளை நிறமாக மாற்றும் இடம் */
+.dish-card {
+    position: relative;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* நிழல் லேசாக மாற்றப்பட்டுள்ளது */
+    border: 1px solid #e0e0e0; /* கார்டைச் சுற்றி லேசான சாம்பல் நிற பார்டர் */
+    background-color: #ffffff; /* கார்டின் பின்னணி வெள்ளை நிறமாக மாற்றப்பட்டுள்ளது */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.dish-card:hover {
+    transform: translateY(-5px);
+    border-color: #dfb76c;
+}
+
+/* 1. படத்தின் மேல் இருக்கும் கருப்பு நிழலைக் குறைக்கும் இடம் (படம் பளிச்சென்று தெரிய) */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* நிழல் மிகவும் குறைக்கப்பட்டுள்ளது, இதனால் படங்கள் அசல் நிறத்தில் வெளிச்சமாகத் தெரியும் */
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+.dish-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover .dish-img {
+    transform: scale(1.05);
+}
+
+.dish-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 3px solid #dfb76c;
+    padding-left: 10px;
+}
+
+.grey-text {
+    color: #777777 !important;
+}
+
+.inner-page {
+    display: none;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.inner-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: #dfb76c;
+    border: 1px solid #dfb76c;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.back-btn:hover {
+    background-color: #dfb76c;
+    color: #0d0d0d;
+}
+
+.category-name {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+}
+
+.item-card {
+    display: flex;
+    background-color: #E7FAFE;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #222222;
+    height: 120px;
+}
+
+.item-thumb {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.item-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #dfb76c;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.item-description {
+    font-size: 13px;
+    color: #8c8c8c;
+    line-height: 1.4;
+}
+
+/* ரெஸ்பான்சிவ் பிரேக்-பாயிண்ட்ஸ் */
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+    .items-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar { padding: 15px 20px; }
+    .brand-logo { font-size: 18px; }
+    .dish-card { height: 180px; }
+    .dish-title { font-size: 14px; bottom: 15px; left: 15px; }
+    .category-name { font-size: 20px; }
+    .item-card { height: 100px; }
+    .item-thumb { width: 100px; }
+    .item-name { font-size: 14px; }
+    .item-description { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
