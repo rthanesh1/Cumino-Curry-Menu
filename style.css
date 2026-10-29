@@ -1,13 +1,14 @@
-/* --- CSS வடிவமைப்பு --- */
+/* ==========================================================================
+   1. உங்களுடைய அசல் பிரதான CSS அடுக்குகள் (முன்னர் இருந்தது அப்படியே உள்ளது)
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- CSS புதிய பின்னணி மற்றும் லோகோ வடிவமைப்பு --- */
 body {
-    background-color: ##f0efeb; /* புதிய பிரீமியம் சார்கோல் கிரே பின்னணி வண்ணம் */
+    background-color: #f0efeb; 
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -18,16 +19,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background-color: #f0efeb; /* நெவிகேஷன் பாருக்கு சற்று அடர் நிறம் */
+    background-color: #f0efeb; 
     border-bottom: 1px solid #2d2d2d;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* லோகோவை நடுவில் வைக்க உதவும் ஸ்டைல் */
 .nav-space-left {
-    width: 150px; /* வலது பக்கம் இருக்கும் டிராப்டவுன் அளவிற்கு இணையான காலி இடம் */
+    width: 150px; 
 }
 
 .brand-logo {
@@ -35,39 +35,23 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    flex: 1; /* லோகோவை நடுப்பகுதிக்கு தள்ளும் */
+    flex: 1; 
 }
 
-/* லோகோ படத்தின் அளவு மற்றும் ரெஸ்பான்சிவ் ஸ்டைல் */
 .logo-img {
-    max-height: 70px; /* லோகோவின் உயரத்தை கட்டுப்படுத்த */
+    max-height: 70px; 
     object-fit: contain;
     width: auto;
 }
 
-/* கார்டுகளின் பின்னணி வண்ணம் புதிய தீமிற்கு ஏற்ப மாறுவதற்காக */
 .item-card {
     display: flex;
-    background-color: #E9F1FC; /* கார்டின் உள் பின்னணி */
+    background-color: #E9F1FC; 
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #2d2d2d;
     height: 120px;
 }
-
-/* மொபைல் திரைகளுக்கான லோகோ சீரமைப்பு */
-@media (max-width: 600px) {
-    .navbar {
-        padding: 10px 15px;
-    }
-    .nav-space-left {
-        display: none; /* மொபைலில் காலி இடத்தை மறைக்கிறோம் */
-    }
-    .logo-img {
-        max-height: 40px; /* மொபைல் திரைக்கு ஏற்ப லோகோ சிறுதாகும் */
-    }
-}
-
 
 .lang-wrapper {
     display: flex;
@@ -98,34 +82,99 @@ body {
     gap: 25px;
 }
 
-/* 2. உணவுக் கார்டுகளின் பின்னணியை மட்டும் வெள்ளை நிறமாக மாற்றும் இடம் */
 .dish-card {
     position: relative;
     height: 250px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* நிழல் லேசாக மாற்றப்பட்டுள்ளது */
-    border: 1px solid #e0e0e0; /* கார்டைச் சுற்றி லேசான சாம்பல் நிற பார்டர் */
-    background-color: #ffffff; /* கார்டின் பின்னணி வெள்ளை நிறமாக மாற்றப்பட்டுள்ளது */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    border: 1px solid #e0e0e0; 
+    background-color: #ffffff; 
     cursor: pointer;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
+
 .dish-card:hover {
     transform: translateY(-5px);
     border-color: #dfb76c;
 }
 
-/* 1. படத்தின் மேல் இருக்கும் கருப்பு நிழலைக் குறைக்கும் இடம் (படம் பளிச்சென்று தெரிய) */
+.hotel-header-info {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    z-index: 1000;
+}
+
+.contact-item {
+    margin-bottom: 8px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007A53;
+    color: white !important;
+    padding: 10px 24px;
+    text-decoration: none !important;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #005F41;
+}
+
+.wa-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.email-block {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.gmail-link {
+    color: #007bff !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gmail-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
+
+.map-center-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px auto;       
+    width: 100%;
+}
+
 .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* நிழல் மிகவும் குறைக்கப்பட்டுள்ளது, இதனால் படங்கள் அசல் நிறத்தில் வெளிச்சமாகத் தெரியும் */
     background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
     z-index: 1;
 }
+
 .dish-img {
     width: 100%;
     height: 100%;
@@ -174,23 +223,6 @@ body {
     margin-bottom: 40px;
 }
 
-.back-btn {
-    background-color: transparent;
-    color: #dfb76c;
-    border: 1px solid #dfb76c;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-}
-
-.back-btn:hover {
-    background-color: #dfb76c;
-    color: #0d0d0d;
-}
-
 .category-name {
     font-family: 'Cinzel', serif;
     font-size: 28px;
@@ -202,15 +234,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 25px;
-}
-
-.item-card {
-    display: flex;
-    background-color: #E7FAFE;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #222222;
-    height: 120px;
 }
 
 .item-thumb {
@@ -252,7 +275,122 @@ body {
     line-height: 1.4;
 }
 
-/* ரெஸ்பான்சிவ் பிரேக்-பாயிண்ட்ஸ் */
+/* ==========================================================================
+   2. கிறிஸ்துமஸ் மெனுவிற்கான பிரத்யேக புதிய CSS அடுக்குகள் (புதிதாக இணைக்கப்பட்டது)
+   ========================================================================== */
+.lang-bar {
+    background-color: #007A53; 
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lang-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+    color: #333333;
+}
+
+.lang-btn.active {
+    background-color: #A61A1A; 
+    color: white;
+    border-color: #A61A1A;
+}
+
+.menu-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.header-title {
+    text-align: center;
+    color: #A61A1A;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+}
+
+.menu-section {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid #007A53;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #007A53;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+}
+
+.sub-section-title {
+    font-size: 14px;
+    color: #A61A1A;
+    margin: 10px 0 5px 0;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.food-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    width: 25px;
+    text-align: center;
+}
+
+.item-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c2c2c !important; /* உணவுகளின் பெயர் கருப்பு நிறத்தில் தெளிவாக தெரிய */
+    font-family: 'Arial', sans-serif;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #A61A1A;
+    color: white !important;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   3. ரெஸ்பான்சிவ் மீடியா குவரிகள் (Responsive Media Queries)
+   ========================================================================== */
 @media (max-width: 900px) {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr); 
@@ -265,13 +403,42 @@ body {
 }
 
 @media (max-width: 600px) {
-    .navbar { padding: 15px 20px; }
-    .brand-logo { font-size: 18px; }
-    .dish-card { height: 180px; }
-    .dish-title { font-size: 14px; bottom: 15px; left: 15px; }
-    .category-name { font-size: 20px; }
-    .item-card { height: 100px; }
-    .item-thumb { width: 100px; }
-    .item-name { font-size: 14px; }
-    .item-description { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .navbar { 
+        padding: 10px 15px; 
+    }
+    .nav-space-left { 
+        display: none; 
+    }
+    .logo-img { 
+        max-height: 40px; 
+    }
+    .brand-logo { 
+        font-size: 18px; 
+    }
+    .dish-card { 
+        height: 180px; 
+    }
+    .dish-title { 
+        font-size: 14px; 
+        bottom: 15px; 
+        left: 15px; 
+    }
+    .category-name { 
+        font-size: 20px; 
+    }
+    .item-card { 
+        height: 100px; 
+    }
+    .item-thumb { 
+        width: 100px; 
+    }
+    .item-name { 
+        font-size: 14px; 
+    }
+    .item-description { 
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical; 
+        overflow: hidden; 
+    }
 }
