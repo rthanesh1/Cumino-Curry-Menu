@@ -114,12 +114,13 @@ body {
     margin-bottom: 8px;
 }
 
-.whatsapp-btn {
+/* நேரடியாக போன் கால் செய்வதற்கான பட்டன் வடிவமைப்பு */
+.call-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #007A53;
-    color: white !important;
+    background-color: #A61A1A; /* நீங்கள் அனுப்பிய படத்தில் உள்ள அடர் சிவப்பு நிறம் */
+    color: #ffffff !important;
     padding: 10px 24px;
     text-decoration: none !important;
     border-radius: 50px;
@@ -130,14 +131,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn:hover {
-    background-color: #005F41;
+.call-btn:hover {
+    background-color: #851414; /* மவுஸை மேலே வைக்கும் போது தோன்றும் அடர் சிவப்பு */
 }
 
-.wa-icon {
-    width: 18px;
-    height: 18px;
+.phone-icon {
     margin-right: 10px;
+    font-size: 16px;
 }
 
 .email-block {
