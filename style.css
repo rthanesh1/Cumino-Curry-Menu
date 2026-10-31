@@ -114,13 +114,12 @@ body {
     margin-bottom: 8px;
 }
 
-/* நேரடியாக போன் கால் செய்வதற்கான பட்டன் வடிவமைப்பு */
-.call-btn {
+.whatsapp-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #A61A1A; /* நீங்கள் அனுப்பிய படத்தில் உள்ள அடர் சிவப்பு நிறம் */
-    color: #ffffff !important;
+    background-color: #007A53;
+    color: white !important;
     padding: 10px 24px;
     text-decoration: none !important;
     border-radius: 50px;
@@ -131,15 +130,32 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.call-btn:hover {
-    background-color: #851414; /* மவுஸை மேலே வைக்கும் போது தோன்றும் அடர் சிவப்பு */
+.whatsapp-btn:hover {
+    background-color: #005F41;
 }
 
-.phone-icon {
+.wa-icon {
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
-    font-size: 16px;
 }
 
+.email-block {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.gmail-link {
+    color: #007bff !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gmail-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
 
 .map-center-container {
     display: flex;
@@ -426,3 +442,55 @@ body {
         overflow: hidden; 
     }
 }
+/* ==========================================================================
+   GOOGLE REVIEW BUTTON STYLE (பக்கத்தின் இடதுபுறத்தில் அமைய)
+   ========================================================================== */
+.google-review-wrapper {
+    text-align: left; /* பட்டனை இடதுபுறமாக சீரமைக்க */
+    margin: 30px 0;   /* மேலேயும் கீழேயும் போதிய இடைவெளி கிடைக்க */
+    padding: 0 40px;  /* பக்கவாட்டில் அலைன்மென்ட் சரியாக இருக்க */
+    width: 100%;
+}
+
+.google-review-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #4285F4 !important; /* கூகுள் நீல நிறம் */
+    border: 1px solid #4285F4;
+    padding: 12px 24px;
+    border-radius: 50px;       /* வட்ட வடிவ பட்டன் */
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.google-review-btn:hover {
+    background-color: #4285F4;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(66, 133, 244, 0.3);
+}
+
+.g-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* மொபைல் போன்களுக்கான வடிவமைப்பு (Responsive) */
+@media (max-width: 768px) {
+    .google-review-wrapper {
+        text-align: center; /* மொபைலில் பார்க்க அழகாக நடுவில் தெரியும் */
+        padding: 0 15px;
+    }
+    .google-review-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 90%;         /* மொபைல் திரைக்கு ஏற்ப அகலம் */
+        justify-content: center;
+    }
+}
+
