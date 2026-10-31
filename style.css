@@ -114,12 +114,13 @@ body {
     margin-bottom: 8px;
 }
 
-.whatsapp-btn {
+/* Styling for the Direct Calling Button */
+.call-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #007A53;
-    color: white !important;
+    background-color: #A61A1A; /* Deep red color from your image */
+    color: #ffffff !important;
     padding: 10px 24px;
     text-decoration: none !important;
     border-radius: 50px;
@@ -130,31 +131,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn:hover {
-    background-color: #005F41;
+.call-btn:hover {
+    background-color: #851414; /* Darker red on hover */
 }
 
-.wa-icon {
-    width: 18px;
-    height: 18px;
+.phone-icon {
     margin-right: 10px;
-}
-
-.email-block {
-    font-size: 14px;
-    color: #333;
-    margin-top: 5px;
-}
-
-.gmail-link {
-    color: #007bff !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.gmail-link:hover {
-    color: #0056b3 !important;
-    text-decoration: underline;
+    font-size: 16px;
 }
 
 .map-center-container {
