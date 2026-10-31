@@ -981,34 +981,28 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
         // இந்த இடத்திலிருந்து கீழே உள்ள புதிய செயல்பாடுகளை மட்டும் மாற்றவும்
         // ----------------------------------------------------
 
-        // மொழி மாற்றும் புதிய செயல்பாடு
+               // =====================================================================
+        // ஒருங்கிணைக்கப்பட்ட புதிய மொழி மாற்றும் செயல்பாடு (All-in-One Function)
+        // =====================================================================
         function switchLanguage() {
             const selectedLanguage = document.getElementById("language-dropdown").value;
             const items = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6"];
             
-            // 1. முதன்மைப் பக்க கார்டுகளின் பெயர்களை மாற்றுதல்
+            // 1. முதன்மைப் பக்க கார்டுகளின் பெயர்களை மாற்றுதல் (Menu Items Change)
             items.forEach(itemId => {
-                document.getElementById(itemId).innerText = menuTranslations[selectedLanguage][itemId];
+                const element = document.getElementById(itemId);
+                if (element && menuTranslations && menuTranslations[selectedLanguage]) {
+                    element.innerText = menuTranslations[selectedLanguage][itemId];
+                }
             });
 
-            // 2. Back பட்டனின் மொழியை மாற்றுதல்
-            document.getElementById("back-btn-text").innerText = menuTranslations[selectedLanguage].backBtn;
-
-            // 3. உள் பக்கம் ஓப்பனில் இருந்தால், தற்போதைய ஸ்க்ரோல் பொசிஷனை மாறாமல் புதுப்பிக்கும்
-            const innerPage = document.getElementById("inner-page");
-            if (innerPage.style.display === "block") {
-                const currentScroll = window.scrollY;
-                generateAllItems();
-                window.scrollTo(0, currentScroll);
+            // 2. Back பட்டனின் மொழியை மாற்றுதல் (Back Button Change)
+            const backBtn = document.getElementById("back-btn-text");
+            if (backBtn && menuTranslations && menuTranslations[selectedLanguage]) {
+                backBtn.innerText = menuTranslations[selectedLanguage].backBtn;
             }
-        } 
-        function switchLanguage() {
-            // ... (உங்களுடைய தற்போதைய பழைய குறியீடுகள் அப்படியே இருக்கட்டும்) ...
-            const selectedLanguage = document.getElementById("language-dropdown").value;
-            
-            // =====================================================================
-            // புதிய திருத்தம்: "Please give your valuable review" - 7 மொழிகளில்
-            // =====================================================================
+
+            // 3. கூகுள் ரிவியூ பட்டனின் மொழியை மாற்றுதல் (Google Review Text Change)
             const reviewTranslations = {
                 es: "Por favor, danos tu valiosa reseña",
                 en: "Please give your valuable review",
@@ -1021,11 +1015,20 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
 
             const reviewBtnText = document.getElementById("review-btn-text");
             if (reviewBtnText && reviewTranslations[selectedLanguage]) {
-                // இந்த எளிய முறை மூலம் தேர்ந்தெடுக்கப்பட்ட மொழிக்கு உரை உடனடியாக மாறிவிடும்
                 reviewBtnText.innerText = reviewTranslations[selectedLanguage];
             }
+
+            // 4. உள் பக்கம் ஓப்பனில் இருந்தால், தற்போதைய ஸ்க்ரோல் பொசிஷனை மாறாமல் புதுப்பிக்கும்
+            const innerPage = document.getElementById("inner-page");
+            if (innerPage && innerPage.style.display === "block") {
+                const currentScroll = window.scrollY;
+                if (typeof generateAllItems === "function") {
+                    generateAllItems();
+                }
+                window.scrollTo(0, currentScroll);
+            }
         }
-       
+
         // உள் பக்கத்தில் அனைத்து பிரிவுகளையும் (20, 20 ஐட்டங்களாக) வரிசையாக உருவாக்கும் செயல்பாடு
                // உள் பக்கத்தில் அனைத்து பிரிவுகளையும், மேல் மெனு பாரையும், மற்றும் உங்களது அசல் உணவுகளையும் உருவாக்கும் செயல்பாடு
               // [object Object] என்ற பிழையைச் சரிசெய்து உணவுகளின் பெயர்களைக் காட்டும் புதிய செயல்பாடு
