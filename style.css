@@ -476,4 +476,68 @@ body {
         justify-content: center;
     }
 }
+/* ==========================================================================
+   வட்ட வடிவ சமூக ஊடக சின்னங்கள் (CIRCULAR SOCIAL MEDIA ICONS)
+   ========================================================================== */
+.social-media-footer {
+    text-align: center;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+#social-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* சின்னங்களுக்கு இடையே உள்ள இடைவெளி */
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 50px;  /* வட்டத்தின் அகலம் */
+    height: 50px; /* வட்டத்தின் உயரம் */
+    border-radius: 50%; /* துல்லியமான வட்ட வடிவம் */
+    text-decoration: none !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+/* லோகோக்களின் அளவு */
+.social-btn i, .social-btn svg {
+    font-size: 20px;
+    margin: 0; 
+}
+
+/* மவுஸ் வைக்கும் போது மாறும் நிறங்கள் (Hover Effects) */
+.social-btn.fb-color { color: #1877F2 !important; }
+.social-btn.fb-color:hover { background-color: #1877F2; color: #ffffff !important; border-color: #1877F2; }
+
+.social-btn.insta-color { color: #E4405F !important; }
+.social-btn.insta-color:hover { background-color: #E4405F; color: #ffffff !important; border-color: #E4405F; }
+
+.social-btn.tiktok-color { color: #010101 !important; }
+.social-btn.tiktok-color:hover { background-color: #010101; color: #ffffff !important; border-color: #010101; }
+
+.tiktok-svg-icon {
+    transition: fill 0.3s ease;
+}
+.social-btn.tiktok-color:hover .tiktok-svg-icon {
+    fill: #ffffff;
+}
+
 
