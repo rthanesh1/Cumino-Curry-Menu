@@ -984,6 +984,9 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                // =====================================================================
         // ஒருங்கிணைக்கப்பட்ட புதிய மொழி மாற்றும் செயல்பாடு (All-in-One Function)
         // =====================================================================
+               // =====================================================================
+        // ஒருங்கிணைக்கப்பட்ட புதிய மொழி மாற்றும் செயல்பாடு (All-in-One Function)
+        // =====================================================================
         function switchLanguage() {
             const selectedLanguage = document.getElementById("language-dropdown").value;
             const items = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6"];
@@ -1016,6 +1019,18 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
             const reviewBtnText = document.getElementById("review-btn-text");
             if (reviewBtnText && reviewTranslations[selectedLanguage]) {
                 reviewBtnText.innerText = reviewTranslations[selectedLanguage];
+            }
+
+            // =====================================================================
+            // திருத்தப்பட்ட பகுதி: சமூக ஊடகத் தலைப்பு மொழி மாற்றம் (Social Title Translate Fix)
+            // =====================================================================
+            const socialTitle = document.getElementById("social-title");
+            if (socialTitle) {
+                // "en" என்பதற்குப் பதிலாக பயனர் தேர்ந்தெடுத்த மொழியை (selectedLanguage) இங்கு மாற்றியுள்ளோம்
+                const translatedSocialText = socialTitle.getAttribute("data-lang-" + selectedLanguage);
+                if (translatedSocialText) {
+                    socialTitle.innerText = translatedSocialText;
+                }
             }
 
             // 4. உள் பக்கம் ஓப்பனில் இருந்தால், தற்போதைய ஸ்க்ரோல் பொசிஷனை மாறாமல் புதுப்பிக்கும்
