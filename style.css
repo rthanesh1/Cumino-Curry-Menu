@@ -114,12 +114,14 @@ body {
     margin-bottom: 8px;
 }
 
-/* Styling for the Direct Calling Button */
+/* ==========================================================================
+   புதிய மற்றும் திருத்தப்பட்ட கால் பட்டன் குறியீடு (NEW CALL BUTTON WITH RESPONSIVE FIX)
+   ========================================================================== */
 .call-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #A61A1A; /* Deep red color from your image */
+    background-color: #A61A1A; 
     color: #ffffff !important;
     padding: 10px 24px;
     text-decoration: none !important;
@@ -132,13 +134,38 @@ body {
 }
 
 .call-btn:hover {
-    background-color: #851414; /* Darker red on hover */
+    background-color: #851414; 
 }
 
 .phone-icon {
     margin-right: 10px;
     font-size: 16px;
 }
+
+/* மொபைல் திரையில் மட்டும் பட்டனை கீழே இறக்கும் பகுதி (Mobile Only Fix) */
+@media (max-width: 600px) {
+    .navbar { 
+        padding: 15px 15px !important;
+        flex-direction: column !important; /* லோகோ மற்றும் பட்டன் தனித்தனி வரியில் வர */
+        gap: 12px !important; /* இரண்டிற்கும் இடையே உள்ள இடைவெளி */
+    }
+    
+    .brand-logo { 
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    .logo-img { 
+        max-height: 45px !important; /* மொபைலுக்கு கச்சிதமான லோகோ அளவு */
+    }
+    
+    .call-btn {
+        margin-top: 8px !important; /* லோகோவிலிருந்து பட்டனை கீழே தள்ளுகிறது */
+        padding: 8px 20px !important; /* மொபைல் பட்டன் அளவு */
+        font-size: 14px !important;
+    }
+}
+
 
 .map-center-container {
     display: flex;
