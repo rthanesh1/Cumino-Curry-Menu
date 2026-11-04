@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
     <title>Premium Restaurant Menu</title>
     <!-- கூகுள் ஃபான்ட்ஸ் -->
     <link href="https://googleapis.com" rel="stylesheet">
@@ -20,7 +19,7 @@
         
         <!-- லோகோ படம் வரும் முக்கிய பகுதி (நடுவில் அமையும்) -->
         <div class="brand-logo" onclick="showMainPage()">
-            <img src="image/logo.jpeg" alt="Logo" class="logo-img">
+            <img src="image/zlogo.jpeg" alt="Logo" class="logo-img">
         </div>
 
         <div class="lang-wrapper">
@@ -47,48 +46,82 @@
         </div>
     </header>
 
-    <!-- 1. முதன்மைப் பக்கம் (Main Page - ஆரம்பத்தில் ஸ்பானிஷில் லோட் ஆகும்) -->
-    <main class="main-page" id="main-page">
-        <div class="menu-grid">
-            
-            <div class="dish-card" onclick="openCategory('dish1')">
-                <div class="image-overlay"></div>
-                <img src="image/starter.jpg" alt="Entrantes" class="dish-img">
-                <h2 class="dish-title" id="dish1">ENTRANTES</h2>
-            </div>
+   <!-- 1. முதன்மைப் பக்கம் (Main Page - ஆரம்பத்தில் ஸ்பானிஷில் லோட் ஆகும்) -->
+<main class="main-page" id="main-page">
+    <div class="menu-grid">
 
-            <div class="dish-card" onclick="openCategory('dish2')">
-                <div class="image-overlay"></div>
-                <img src="image/curry.jpg" alt="Platos Principales" class="dish-img">
-                <h2 class="dish-title" id="dish2">PLATOS PRINCIPALES</h2>
-            </div>
-
-            <div class="dish-card" onclick="openCategory('dish3')">
-                <div class="image-overlay"></div>
-                <img src="image/rice naan.jpg" alt="Arroz y Panes" class="dish-img">
-                <h2 class="dish-title" id="dish3">ARROZ Y PANES</h2>
-            </div>
-
-            <div class="dish-card" onclick="openCategory('dish4')">
-                <div class="image-overlay"></div>
-                <img src="image/tea sweet.jpeg" alt="Bebidas y Postres" class="dish-img">
-                <h2 class="dish-title" id="dish4">BEBIDAS Y POSTRES</h2>
-            </div>
-
-            <div class="dish-card" onclick="openCategory('dish5')">
-                <div class="image-overlay"></div>
-                <img src="image/special chef.jpeg" alt="Especial del Chef" class="dish-img">
-                <h2 class="dish-title" id="dish5">ESPECIAL DEL CHEF</h2>
-            </div>
-
-            <div class="dish-card" onclick="openCategory('dish6')">
-                <div class="image-overlay"></div>
-                <img src="image/xmas.jpg"alt="ESPECIAL DE NAVIDAD" class="dish-img">
-                <h2 class="dish-title" id="dish6">ESPECIAL DE NAVIDAD</h2>
-            </div>
-
+        <!-- 1. SOUP -->
+        <div class="dish-card" onclick="openCategory('dish1')">
+            <div class="image-overlay"></div>
+            <img src="image/1a sp.jpeg" alt="Sopas" class="dish-img">
+            <h2 class="dish-title" id="dish1">SOPAS</h2>
         </div>
-    </main>
+        
+        <!-- 2. STARTER (VEG & NO VEG) -->
+        <div class="dish-card" onclick="openCategory('dish2')">
+            <div class="image-overlay"></div>
+            <img src="image/2a st.jpeg" alt="Entrantes" class="dish-img">
+            <h2 class="dish-title" id="dish2">ENTRANTES (VEG & NO VEG)</h2>
+        </div>
+
+        <!-- 3. SIDE DISH -->
+        <div class="dish-card" onclick="openCategory('dish3')">
+            <div class="image-overlay"></div>
+            <img src="image/3a sd.jpeg" alt="Acompañamientos" class="dish-img">
+            <h2 class="dish-title" id="dish3">ACOMPAÑAMIENTOS</h2>
+        </div>
+
+        <!-- 4. VEGAN -->
+        <div class="dish-card" onclick="openCategory('dish4')">
+            <div class="image-overlay"></div>
+            <img src="image/4a vg.jpg" alt="Vegano" class="dish-img">
+            <h2 class="dish-title" id="dish4">VEGANO</h2>
+        </div>
+
+        <!-- 5. MAIN (VEG & NO VEG) -->
+        <div class="dish-card" onclick="openCategory('dish5')">
+            <div class="image-overlay"></div>
+            <img src="image/5a m.jpeg" alt="Platos Principales" class="dish-img">
+            <h2 class="dish-title" id="dish5">PLATOS PRINCIPALES (VEG & NO VEG)</h2>
+        </div>
+
+        <!-- 6. RICE & BIRYANI -->
+        <div class="dish-card" onclick="openCategory('dish6')">
+            <div class="image-overlay"></div>
+            <img src="image/6a rb.jpeg" alt="Arroz y Biryani" class="dish-img">
+            <h2 class="dish-title" id="dish6">ARROZ Y BIRYANI</h2>
+        </div>
+
+        <!-- 7. BREAD & ROTI -->
+        <div class="dish-card" onclick="openCategory('dish7')">
+            <div class="image-overlay"></div>
+            <img src="image/7a n.jpeg" alt="Pan y Roti" class="dish-img">
+            <h2 class="dish-title" id="dish7">PAN Y ROTI</h2>
+        </div>
+
+        <!-- 8. DRINKS AND DESSERTS -->
+        <div class="dish-card" onclick="openCategory('dish8')">
+            <div class="image-overlay"></div>
+            <img src="image/8a ts.jpeg" alt="Bebidas y Postres" class="dish-img">
+            <h2 class="dish-title" id="dish8">BEBIDAS Y POSTRES</h2>
+        </div>
+
+        <!-- 9. CHEF SPECIAL -->
+        <div class="dish-card" onclick="openCategory('dish9')">
+            <div class="image-overlay"></div>
+            <img src="image/9a sp.jpeg" alt="Especial del Chef" class="dish-img">
+            <h2 class="dish-title" id="dish9">ESPECIAL DEL CHEF</h2>
+        </div>
+     
+        <!-- 10. CHRISTMAS SPECIAL -->
+        <div class="dish-card" onclick="openCategory('dish10')">
+            <div class="image-overlay"></div>
+            <img src="image/10a x.jpg" alt="Especial de Navidad" class="dish-img">
+            <h2 class="dish-title" id="dish10">ESPECIAL DE NAVIDAD</h2>
+        </div>
+
+    </div>
+</main>
 
     <!-- 2. உள் பக்கம் (Inner Page - கிளிக் செய்யும்போது 20 ஐட்டங்கள் காட்டும்) -->
     <section class="inner-page" id="inner-page">
@@ -103,159 +136,1664 @@
     <!-- --- JAVASCRIPT மொழி மாற்றும் பகுதி --- -->
     <!-- --- JAVASCRIPT TRANSLATION LOGIC --- -->
     <script>
-        // 7 மொழிகளுக்கான முழுமையான தரவுத்தளம் (இதை மாற்ற வேண்டாம், அப்படியே இருக்கட்டும்)
+        // 7 மொழிகளுக்கான முழுமையான தரவுத்தளம் (இதை மாற்ற வேண்டாம், அப்படியே இருக்கட்டும்) 
         const menuTranslations = {
-            es: { 
-                dish1: "ENTRANTES", dish2: "PLATOS PRINCIPALES", dish3: "ARROZ Y PANES", 
-                dish4: "BEBIDAS Y POSTRES", dish5: "ESPECIAL DEL CHEF", dish6: "ESPECIAL DE NAVIDAD",
-                backBtn: "← Volver", itemTitle: "Artículo", itemDesc: "Plato delicioso y recién preparado hecho con ingredientes de primera calidad."
-            },
-            en: { 
-                dish1: "STARTERS", dish2: "MAIN COURSES", dish3: "RICE AND BREADS", 
-                dish4: "DRINKS AND DESSERTS", dish5: "CHEF'S SPECIAL", dish6: "Christmas Special",
-                backBtn: "← Back", itemTitle: "Item", itemDesc: "Delicious and freshly prepared dish made with premium quality ingredients."
-            },
-            pt: { 
-                dish1: "ENTRADAS", dish2: "PRATOS PRINCIPAIS", dish3: "ARROZ E PÃES", 
-                dish4: "BEBIDAS E SOBREMESAS", dish5: "ESPECIAL DO CHEF", dish6: "Especial de Natal",
-                backBtn: "← Voltar", itemTitle: "Item", itemDesc: "Prato delicioso e acabado de preparar feito com ingredientes de primeira qualidade."
-            },
-            de: { 
-                dish1: "VORSPEISEN", dish2: "HAUPTGERICHTE", dish3: "REIS UND BROT", 
-                dish4: "GETRÄNKE UND DESSERTS", dish5: "CHEF-SPEZIALITÄT", dish6: "Weihnachtsspecial",
-                backBtn: "← Zurück", itemTitle: "Gericht", itemDesc: "Köstliches und frisch zubereitetes Gericht aus erstklassigen Zutaten."
-            },
-            fr: { 
-                dish1: "ENTRÉES", dish2: "PLATS PRINCIPAUX", dish3: "RIZ ET PAINS", 
-                dish4: "BOISSONS ET DESSERTS", dish5: "SPÉCIAL DU CHEF", dish6: "Spécial Noël",
-                backBtn: "← Retour", itemTitle: "Article", itemDesc: "Plat délicieux et fraîchement préparé avec des ingrédients de première qualité."
-            },
-            zh: { 
-                dish1: "前菜", dish2: "主菜", dish3: "米饭和面包", 
-                dish4: "饮料和甜点", dish5: "主厨特色菜", dish6: "圣诞特辑",
-                backBtn: "← 返回", itemTitle: "菜品", itemDesc: "美味且新鲜调制的菜肴，采用优质原料制成。"
-            },
-            hi: { 
-                dish1: "एंट्रीज (स्टार्टर्स)", dish2: "मुख्य भोजन", dish3: "चावल और रोटी", 
-                dish4: "पेय और डेसर्ट", dish5: "शेफ की विशेषता", dish6: " क्रिसमस स्पेशल",
-                backBtn: "← वापस", itemTitle: "आइटम", itemDesc: "प्रीमियम गुणवत्ता वाली सामग्री से बना स्वादिष्ट और ताज़ा तैयार व्यंजन।"
-            }
+es: {
+dish1: "SOPAS",
+dish2: "ENTRANTES (VEG & NO VEG)",
+dish3: "ACOMPAÑAMIENTOS",
+dish4: "VEGANO",
+dish5: "PLATOS PRINCIPALES (VEG & NO VEG)",
+dish6: "ARROZ Y BIRYANI",
+dish7: "PAN Y ROTI",
+dish8: "BEBIDAS Y POSTRES",
+dish9: "ESPECIAL DEL CHEF",
+dish10: "ESPECIAL DE NAVIDAD",
+backBtn: "← Volver", itemTitle: "Artículo", itemDesc: "Plato delicioso y recién preparado hecho con ingredientes de primera calidad."
+},
+en: {
+dish1: "SOUPS",
+dish2: "STARTERS (VEG & NON-VEG)",
+dish3: "SIDE DISHES",
+dish4: "VEGAN",
+dish5: "MAIN COURSES (VEG & NON-VEG)",
+dish6: "RICE & BIRYANI",
+dish7: "BREAD & ROTI",
+dish8: "DRINKS AND DESSERTS",
+dish9: "CHEF'S SPECIAL",
+dish10: "CHRISTMAS SPECIAL",
+backBtn: "← Back", itemTitle: "Item", itemDesc: "Delicious and freshly prepared dish made with premium quality ingredients."
+},
+pt: {
+dish1: "SOPAS",
+dish2: "ENTRADAS (VEG & NÃO VEG)",
+dish3: "ACOMPANHAMENTOS",
+dish4: "VEGANO",
+dish5: "PRATOS PRINCIPAIS (VEG & NÃO VEG)",
+dish6: "ARROZ E BIRYANI",
+dish7: "PÃO E ROTI",
+dish8: "BEBIDAS E SOBREMESAS",
+dish9: "ESPECIAL DO CHEF",
+dish10: "ESPECIAL DE NATAL",
+backBtn: "← Voltar", itemTitle: "Item", itemDesc: "Prato delicioso e acabado de preparar feito com ingredientes de primeira qualidade."
+},
+de: {
+dish1: "SUPPEN",
+dish2: "VORSPEISEN (VEG & NON-VEG)",
+dish3: "BEILAGEN",
+dish4: "VEGAN",
+dish5: "HAUPTGERICHTE (VEG & NON-VEG)",
+dish6: "REIS & BIRYANI",
+dish7: "BROT & ROTI",
+dish8: "GETRÄNKE UND DESSERTS",
+dish9: "CHEF-SPEZIALITÄT",
+dish10: "WEIHNACHTSSPECIAL",
+backBtn: "← Zurück", itemTitle: "Gericht", itemDesc: "Köstliches und frisch zubereitetes Gericht aus erstklassigen Zutaten."
+},
+fr: {
+dish1: "SOUPES",
+dish2: "ENTRÉES (VEG & NON VEG)",
+dish3: "ACCOMPAGNEMENTS",
+dish4: "VÉGANE",
+dish5: "PLATS PRINCIPAUX (VEG & NON VEG)",
+dish6: "RIZ & BIRYANI",
+dish7: "PAIN & ROTI",
+dish8: "BOISSONS ET DESSERTS",
+dish9: "SPÉCIAL DU CHEF",
+dish10: "SPÉCIAL NOËL",
+backBtn: "← Retour", itemTitle: "Article", itemDesc: "Plat délicieux et fraîchement préparé avec des ingrédients de première calidad."
+},
+zh: {
+dish1: "汤类",
+dish2: "前菜 (素食 与 非素食)",
+dish3: "配菜",
+dish4: "纯素",
+dish5: "主菜 (素食 与 非素食)",
+dish6: "米饭 与 印式炒饭 (Biryani)",
+dish7: "面包 与 罗提饼 (Roti)",
+dish8: "饮料和甜点",
+dish9: "主厨特色菜",
+dish10: "圣诞特辑",
+backBtn: "← 返回", itemTitle: "菜品", itemDesc: "美味且新鲜调制的菜肴，采用优质原料制成。"
+},
+hi: {
+dish1: "सूप",
+dish2: "स्टार्टर्स (शाकाहारी और मांसाहारी)",
+dish3: "साइड डिश (सहयोगी व्यंजन)",
+dish4: "शाकाहारी (वेगन)",
+dish5: "मुख्य भोजन (शाकाहारी और मांसाहारी)",
+dish6: "चावल और बिरयानी",
+dish7: "रोटी और नान (ब्रेड)",
+dish8: "पेय और डेसर्ट",
+dish9: "शेफ की विशेषता",
+dish10: "क्रिसमस स्पेशल",
+backBtn: "← वापस", itemTitle: "आइटम", itemDesc: "प्रीमियम गुणवत्ता वाली सामग्री से बना स्वादिष्ट और ताज़ा तैयार व्यंजन।"
+}
         };
         // --- நீங்கள் கேட்ட அசல் வடிவத்திலான உணவுகளின் பட்டியல் (Original Format) ---
         // இதில் உள்ள பெயர் (name), விலை (price), விளக்கம் (desc) ஆகியவற்றை நீங்கள் எப்போது வேண்டுமானாலும் மாற்றி எடிட் செய்து கொள்ளலாம்.
         const menuItemsData = {
             
-            // 1. முதலாவது பிரிவு: ENTRANTES
-            dish1: [
-                {
-                    price: "€4.00", img: "image/sa.jpg",
-                    name: { es: "Samosas [V]", en: "Samosas [V]", pt: "Samosas [V]", de: "Samosas [V]", fr: "Samoussas [V]", zh: "萨莫萨三角饺 [V]", hi: "समोसा [V]" },
-                    desc: { es: "Empanadillas crujientes rellenas de patata especiada y guisantes.", en: "Crispy pastries filled with spiced potatoes and peas.", pt: "Pastéis crocantes recheados com batatas condimentadas e ervilhas.", de: "Knusprige Teigtaschen gefüllt mit gewürzten Kartoffeln und Erbsen.", fr: "Feuilletés croustillants farcis de pommes de terre épicées et de petits pois.", zh: "酥脆的外皮包裹着香料调味的土豆和豌豆。", hi: "मसालेदार आलू और मटर से भरा खस्ता समोसा।" }
-},
-                
-                {
-                    price: "€3.00", img: "image/appalam.jpg",
-                    name: { es: "Galletas Indias [V]", en: "Indian Crackers [V]", pt: "Crackers Indianos [V]", de: "Indische Cracker [V]", fr: "Crackers Indiens [V]", zh: "印度脆饼 [V]", hi: "इंडियन क्रैकर्स [V]" },
-                    desc: { es: "Mini crackers crujientes recién cocinados.", en: "Freshly cooked mini crispy crackers.", pt: "Mini crackers crocantes acabados de cozinhar.", de: "Frisch zubereitete knusprige Mini-Cracker.", fr: "Mini crackers croustillants fraîchement préparés.", zh: "新鲜烘焙的迷你酥脆饼干。", hi: "ताज़ा पके हुए छोटे और खस्ता क्रैकर्स।" }
-                },
-                {
-                    price: "€3.00", img: "image/mixer.jpg",
-                    name: { es: "Bombay Mix [V][N]", en: "Bombay Mix [V][N]", pt: "Bombay Mix [V][N]", de: "Bombay Mix [V][N]", fr: "Bombay Mix [V][N]", zh: "孟买克斯 [V][N]", hi: "बंबई मिक्स [V][N]" },
-                    desc: { es: "Una mezcla de snacks salados y crujientes con un toque especiado.", en: "A mix of savory and crispy snacks with a spicy touch.", pt: "Uma mistura de snacks salgados e crocantes com um toque picante.", de: "Eine Mischung aus herzhaften und knusprigen Snacks mit einer pikanten Note.", fr: "Un mélange de snacks salés et coulissants avec une touche épicée.", zh: "带有一点辣味的咸味脆口小吃组合。", hi: "मसालेदार स्वाद के साथ नमकीन और खस्ता स्नैक्स का मिश्रण।" }
-                }
-            ],
-            // 2. இரண்டாவது பிரிவு: PLATOS PRINCIPALES
-            dish2: [
-                {
-                    price: "€13.49", img: "image/butter chiken.jpg",
-                    name: { es: "Pollo a la Mantequilla [N]", en: "Butter Chicken [N]", pt: "Frango com Manteiga [N]", de: "Butterhähnchen [N]", fr: "Poulet au Beurre [N]", zh: "奶油咖喱鸡 [N]", hi: "बटर चिकन [N]" },
-                    desc: { es: "Tierno pollo en una rica y cremosa salsa de tomate.", en: "Tender chicken in a rich and creamy tomato sauce.", pt: "Frango tenro num molho de tomate rico e cremoso.", de: "Zartes Hähnchen in einer reichhaltigen und cremigen Tomatensauce.", fr: "Poulet tendre dans une sauce tomate riche et crémeuse.", zh: "浓郁奶油番茄酱汁中的嫩鸡肉。", hi: "मखमली और गाढ़ी टमाटर की ग्रेवी में पका हुआ रसीला चिकन।" }
-                },
-               {
-                    price: "€12.99", img: "image/chicken curry.jpeg",
-                    name: { es: "Curry de Pollo Casero", en: "Homemade Chicken Curry", pt: "Caril de Frango Caseiro", de: "Hausgemachtes Hähnchen-Curry", fr: "Curry de Poulet Maison", zh: "家常咖喱鸡", hi: "घर का बना चिकन करी" },
-                    desc: { es: "Un reconfortante curry tradicional con picante medio.", en: "A comforting traditional curry with medium spiciness.", pt: "Um caril tradicional reconfortante com picante médio.", de: "Ein wohltuendes traditionelles Curry mit mittlerer Schärfe.", fr: "Un curry traditionnel réconfortant avec un piquant moyen.", zh: "中等辣度的传统家常温暖咖喱。", hi: "मध्यम तीखापन लिए हुए एक पारंपरिक और स्वादिष्ट चिकन करी।" }
-                }, 
-	    {
-                    price: "€12.99", img: "image/tikka masala.jpeg",
-                    name: { es: "Tikka Masala de Pollo", en: "Chicken Tikka Masala", pt: "Frango Tikka Masala", de: "Hähnchen Tikka Masala", fr: "Poulet Tikka Masala", zh: "马萨拉烤鸡肉", hi: "चिकन टिक्का मसाला" },
-                    desc: { es: "Pollo a la parrilla en una suave y aromática salsa masala.", en: "Grilled chicken in a smooth and aromatic masala sauce.", pt: "Frango grelhado num molho masala suave e aromático.", de: "Gegrilltes Hähnchen in einer milden und aromatischen Masala-Sauce.", fr: "Poulet grillé dans une sauce masala douce et aromatique.", zh: "柔滑芳香的马萨拉酱汁中的烤鸡肉。", hi: "धीमी आंच पर भुने हुए चिकन के टुकड़े खुशबूदार मसाला ग्रेवी में।" }
-                },
- {
-                    price: "€13.50", img: "image/kadai chicken.jpeg",
-                    name: { es: "Karahi de Pollo", en: "Chicken Karahi", pt: "Frango Karahi", de: "Hähnchen Karahi", fr: "Poulet Karahi", zh: "锅仔鸡 (Karahi)", hi: "चिकन कढ़ाई" },
-                    desc: { es: "Un curry intenso al wok con pimientos, tomates y especias cálidas.", en: "An intense wok curry with peppers, tomatoes, and warm spices.", pt: "Um caril intenso de wok com pimentos, tomates e especias quentes.", de: "Ein intensives Wok-Curry mit Paprika, Tomaten und wärmenden Gewürzen.", fr: "Un curry intense au wok avec des poivrons, des tomates et des épices chaudes.", zh: "带有青椒、番茄和温热香料的浓郁咖喱。", hi: "शिमला मिर्च, टमाटर और गरम मसालों के साथ कढ़ाई में पकी गाढ़ी करी।" }
-                },
-                {
-                    price: "€8.79", img: "image/vb.jpeg",
-                    name: { es: "Biryani Vegetal [V]", en: "Vegetable Biryani [V]", pt: "Biryani de Vegetais [V]", de: "Gemüse Biryani [V]", fr: "Biryani aux Légumes [V]", zh: "蔬菜比里亚尼菜饭 [V]", hi: "वेज बिरयानी [V]" },
-                    desc: { es: "Arroz fragante cocinado con verduras mixtas y especias aromáticas. (Añadir pollo por +2,50€)", en: "Fragrant rice cooked with mixed vegetables and aromatic spices. (Add chicken for +€2.50)", pt: "Arroz aromático cozinhado com vegetais mistos e especiarias aromáticas. (Adicionar frango por +2,50€)", de: "Duftender Reis gekocht mit gemischtem Gemüse und aromatischen Gewürzen. (Hähnchen für +2,50€ hinzufügen)", fr: "Riz parfumé cuit avec un mélange de légumes et des épices aromatiques. (Ajouter du poulet pour +2,50€)", zh: "香米与多种蔬菜和芳香香料一同烹制。（加鸡肉 +2.50€）", hi: "मशहूर सब्जियों और खुशबूदार मसालों के साथ पके बासमती चावल। (चिकन जोड़ने के लिए +2.50€)" }
-                },
-                {
-                    price: "€10.99", img: "image/vc.jpeg",
-                    name: { es: "Curry de Verduras Mixtas [V][VG]", en: "Mixed Vegetable Curry [V][VG]", pt: "Caril de Vegetais Misto [V][VG]", de: "Gemischtes Gemüse-Curry [V][DE]", fr: "Curry de Légumes Mixtes [V][VG]", zh: "什锦蔬菜咖喱 [V][VG]", hi: "मिक्स वेज करी [V][VG]" },
-                    desc: { es: "Una colorida mezcla de zanahorias, judías verdes, maíz y guisantes.", en: "A colorful mix of carrots, green beans, corn, and peas.", pt: "Uma mistura colorida de cenouras, feijão verde, milho e ervilhas.", de: "Eine bunte Mischung aus Karotten, grünen Bohnen, Mais und Erbsen.", fr: "Un mélange coloré de carottes, haricots verts, maïs et petits pois.", zh: "胡萝卜、四季豆、玉米和豌豆的缤纷组合。", hi: "गाजर, बीन्स, मक्का और हरी मटर की एक रंगीन स्वादिष्ट करी।" }
-                },
-                {
-                    price: "€9.99", img: "image/cm.jpeg",
-                    name: { es: "Chana Masala [V][VG]", en: "Chana Masala [V][VG]", pt: "Chana Masala [V][VG]", de: "Chana Masala [V][DE]", fr: "Chana Masala [V][VG]", zh: "马萨拉鹰嘴豆 [V][VG]", hi: "चना मसाला [V][VG]" },
-                    desc: { es: "Garbanzos cocinados en un masala de tomate especiado.", en: "Chickpeas cooked in a spiced tomato masala.", pt: "Grão-de-bico cozinhado num masala de tomate condimentado.", de: "Kichererbsen gekocht in einem gewürzten Tomaten-Masala.", fr: "Pois chiches cuisinés dans un masala de tomate épicé.", zh: "香辣番茄酱汁中烹制的鹰嘴豆。", hi: "टमाटर and मसालों के गाढ़े मसाले में पके हुए स्वादिष्ट काबुली चने।" }
-                },
-                {
-                    price: "€8.99", img: "image/md.jpeg",
-                    name: { es: "Masoor Dal [V][VG]", en: "Masoor Dal [V][VG]", pt: "Masoor Dal [V][VG]", de: "Masoor Dal [V][DE]", fr: "Masoor Dal [V][VG]", zh: "马苏尔豆 [V][VG]", hi: "मसूर दाल [V][VG]" },
-                    desc: { es: "Lentejas cocinadas con una mezcla de especias aromáticas.", en: "Lentils cooked with a blend of aromatic spices.", pt: "Lentilhas cozinhadas com uma mistura de especiarias aromáticas.", de: "Linsen gekocht mit einer Mischung aus gastronomischen Gewürzen.", fr: "Lentilles cuisinées avec un mélange d'épices aromatiques.", zh: "芳香香料调味慢火烹制的扁豆。", hi: "चुनिंदा पारंपरिक खुशबूदार मसालों के साथ पकी हुई लाल मसूर की दाल।" }
-                }
-            ],
+        // 1. முதலாவது பிரிவு: SOPAS (SOUPS)
+dish1: [
+    {
+        price: "€4.50", img: "image/1b vs.jpg",
+        name: { 
+            es: "Sopa de Verduras [V][VG]", 
+            en: "Veg Soup [V][VG]", 
+            pt: "Sopa de Legumes [V][VG]", 
+            de: "Gemüsesuppe [V][VG]", 
+            fr: "Soupe de Légumes [V][VG]", 
+            zh: "蔬菜汤 [V][VG]", 
+            hi: "शाकाहारी सूप [V][VG]" 
+        },
+        desc: { 
+            es: "Una sopa reconfortante y saludable cargada de verduras frescas de temporada y especias suaves.", 
+            en: "A comforting and healthy soup packed with fresh seasonal vegetables and mild spices.", 
+            pt: "Uma sopa reconfortante e saudável repleta de legumes frescos da época e especiarias suaves.", 
+            de: "Eine wohltuende und gesunde Suppe mit frischem Gemüse der Saison und milden Gewürzen.", 
+            fr: "Une soupe réconfortante et saine pleine de légumes frais de saison et d'épices douces.", 
+            zh: "一款由新鲜时令蔬菜和温和香料熬制而成的舒心健康汤品。", 
+            hi: "ताज़ी मौसमी सब्ज़ियों और हल्के मसालों से भरपूर एक आरामदायक और सेहतमंद सूप।" 
+        }
+    },
+    {
+        price: "€5.50", img: "image/1c cs.jpg",
+        name: { 
+            es: "Sopa de Pollo [NV]", 
+            en: "Chicken Soup [NV]", 
+            pt: "Sopa de Frango [NV]", 
+            de: "Hühnersuppe [NV]", 
+            fr: "Soupe de Poulet [NV]", 
+            zh: "鸡汤 [NV]", 
+            hi: "चिकन सूप [NV]" 
+        },
+        desc: { 
+            es: "Sopa aromática hecha con tierno pollo desmenuzado, hierbas frescas y un toque de pimienta.", 
+            en: "Aromatic soup made with tender shredded chicken, fresh herbs, and a touch of black pepper.", 
+            pt: "Sopa aromática feita con frango desfiado tenro, ervas frescas e um toque de pimenta preta.", 
+            de: "Aromatische Suppe aus zartem, gezupftem Hühnerfleisch, frischen Kräutern und einer Prise schwarzem Pfeffer.", 
+            fr: "Soupe aromatique faite de tendre poulet effiloché, d'herbes fraîches et d'une touche de poivre noir.", 
+            zh: "选用鲜嫩的小鸡丝、新鲜香草和少许黑胡椒熬制而成的浓香鸡汤。", 
+            hi: "नरम चिकन के टुकड़ों, ताज़ी जड़ी-बूटियों और हल्की काली मिर्च से बना सुगंधित सूप।" 
+        }
+    },
+],
+   
+	// 2. இரண்டாவது பிரிவு: ENTRANTES (STARTERS VEG & NON-VEG)
+dish2: [
+    {
+        price: "€4.00", img: "image/2b sa.jpg",
+        name: { 
+            es: "Samosas [V][VG]", 
+            en: "Samosas [V][VG]", 
+            pt: "Samosas [V][VG]", 
+            de: "Samosas [V][VG]", 
+            fr: "Samoussas [V][VG]", 
+            zh: "萨莫萨三角饺 [V][VG]", 
+            hi: "समोसा [V][VG]" 
+        },
+        desc: { 
+            es: "Empanadillas crujientes rellenas de patata especiada y guisantes.", 
+            en: "Crispy pastries filled with spiced potatoes and peas.", 
+            pt: "Pastéis crocantes recheados com batatas condimentadas e ervilhas.", 
+            de: "Knusprige Teigtaschen gefüllt mit gewürzten Kartoffeln und Erbsen.", 
+            fr: "Feuilletés croustillants farcis de pommes de terre épicées et de petits pois.", 
+            zh: "酥脆的外皮包裹着香料调味的土豆和豌豆。", 
+            hi: "मसालेदार आलू और मटर से भरा खस्ता समोसा।" 
+        }
+    },
+    {
+        price: "€5.00", img: "image/2c ob.jpeg",
+        name: { 
+            es: "Bhajis de Cebolla [V][VG]", 
+            en: "Onion Bhajis [V][VG]", 
+            pt: "Bhajis de Cebola [V][VG]", 
+            de: "Zwiebel-Bhajis [V][VG]", 
+            fr: "Bhajis d'Oignon [V][VG]", 
+            zh: "洋葱巴吉炸物 [V][VG]", 
+            hi: "प्याज की भजिया [V][VG]" 
+        },
+        desc: { 
+            es: "Frituras crujientes de cebolla sazonadas con especias tradicionales.", 
+            en: "Crispy onion fritters seasoned with traditional spices.", 
+            pt: "Fritos de cebola crocantes temperados com especiarias tradicionais.", 
+            de: "Knusprige Zwiebelbällchen, gewürzt mit traditionellen indischen Gewürzen.", 
+            fr: "Beignets d'oignons croustillants assaisonnés d'épices traditionnelles.", 
+            zh: "用传统香料调味炸至香脆的洋葱酥饼。", 
+            hi: "पारंपरिक मसालों के साथ तैयार की गई कटी हुई प्याज की कुरकुरी भजिया।" 
+        }
+    },
+    {
+        price: "€5.50", img: "image/2d k.jpeg",
+        name: { 
+            es: "Pakoras de Berenjena [V][VG]", 
+            en: "Eggplant Pakoda [V][VG]", 
+            pt: "Pakoras de Berinjela [V][VG]", 
+            de: "Auberginen-Pakoda [V][VG]", 
+            fr: "Pakoras d'Aubergine [V][VG]", 
+            zh: "炸茄子 帕科拉 [V][VG]", 
+            hi: "बैंगन के पकोड़े [V][VG]" 
+        },
+        desc: { 
+            es: "Rodajas de berenjena rebozadas en harina de garbanzo especiada y fritas.", 
+            en: "Sliced eggplant dipped in spiced chickpea batter and golden fried.", 
+            pt: "Fatias de berinjela mergulhadas em polme de grão-de-bico condimentado e fritas.", 
+            de: "Auberginenscheiben in gewürztem Kichererbsen-Teigmantel, goldbraun frittiert.", 
+            fr: "Tranches d'aubergine trempées dans une pâte de pois chiches épicée et frites.", 
+            zh: "裹上调味鹰嘴豆粉糊炸至金黄 Extrêmement 酥脆的茄子片。", 
+            hi: "मसालेदार बेसन के घोल में लपेटकर तले हुए बैंगन के कुरकुरे पकोड़े।" 
+        }
+    },
+    {
+        price: "€5.50", img: "image/2e c.jpeg",
+        name: { 
+            es: "Chana Chaat [V]", 
+            en: "Chana Chaat [V]", 
+            pt: "Chana Chaat [V]", 
+            de: "Chana Chaat [V]", 
+            fr: "Chana Chaat [V]", 
+            zh: "印式鹰嘴豆沙拉 (Chana Chaat) [V]", 
+            hi: "चना चाट [V]" 
+        },
+        desc: { 
+            es: "Ensalada picante y refrescante de garbanzos con cebolla, tomates y especias chaat masalas.", 
+            en: "Tangy and refreshing chickpea salad with onions, tomatoes, and chat spices.", 
+            pt: "Salada de grão-de-bico picante e refrescante com cebola, tomate e especiarias chaat.", 
+            de: "Erfrischender, würziger Kichererbsensalat mit Zwiebeln, Tomaten und traditionellen Chaat-Gewürzen.", 
+            fr: "Salade de pois chiches acidulée et rafraîchissante avec oignons, tomates et épices chaat.", 
+            zh: "由鹰嘴豆、洋葱、番茄和特制印式沙拉香料调制的酸辣清爽沙拉。", 
+            hi: "उबले चनों, प्याज, टमाटर और चटपटे चाट मसाले से बनी ताज़ा और स्वादिष्ट चाट।" 
+        }
+    },
+    {
+        price: "€6.50", img: "image/2f cp.jpg",
+        name: { 
+            es: "Pakoras de Pollo [NV]", 
+            en: "Chicken Pakoda [NV]", 
+            pt: "Pakoras de Frango [NV]", 
+            de: "Chicken Pakoda [NV]", 
+            fr: "Pakoras de Poulet [NV]", 
+            zh: "炸鸡肉 帕科拉 [NV]", 
+            hi: "चिकन पकोड़ा [NV]" 
+        },
+        desc: { 
+            es: "Trocitos de pollo marinados, rebozados en harina de garbanzo y fritos crujientes.", 
+            en: "Marinated chicken bites coated in spiced chickpea batter and deep-fried.", 
+            pt: "Pedaços de frango marinados, envolvidos em polme de grão-de-bico e fritos.", 
+            de: "Marinierte Hähnchenhappen in gewürztem Kichererbsen-Teigmantel, knusprig frittiert.", 
+            fr: "Bouchées de poulet marinées enrobées de pâte de pois chiches et frites de façon croustillante.", 
+            zh: "将腌制好的鸡肉块裹上调味鹰嘴豆粉糊，炸至外酥里嫩。", 
+            hi: "मसालेदार बेसन के घोल में लिपटे और डीप-फ्राई किए गए कुरकुरे चिकन के पकोड़े।" 
+        }
+    },
+    {
+        price: "€8.50", img: "image/2v tc.jpg",
+        name: { 
+            es: "Pollo Tandoori [NV]", 
+            en: "Tandoori Chicken [NV]", 
+            pt: "Frango Tandoori [NV]", 
+            de: "Tandoori-Hähnchen [NV]", 
+            fr: "Poulet Tandoori [NV]", 
+            zh: "天杜里烤鸡 (Tandoori Chicken) [NV]", 
+            hi: "तंदूरी चिकन [NV]" 
+        },
+        desc: { 
+            es: "Pollo con hueso marinado en yogur y especias aromáticas, asado en el horno de barro.", 
+            en: "Bone-in chicken marinated in yogurt and aromatic spices, roasted in the clay oven.", 
+            pt: "Frango com osso marinado em iogurte e especiarias aromáticas, assado no forno de barro.", 
+            de: "Hähnchen mit Knochen, mariniert in Joghurt und feinen Gewürzen, im traditionellen Lehmofen (Tandoor) gebacken.", 
+            fr: "Poulet avec os mariné dans du yaourt et des épices aromatiques, rôti au horno de barro.", 
+            zh: "将带骨鸡肉浸泡在酸奶和芳香香料中腌制, 然后在传统泥炉中炭火烘烤而成。", 
+            hi: "दही और सुगंधित मसालों में मैरीनेट किया हुआ हड्डी वाला चिकन, जिसे मिट्टी के तंदूर में भूना गया है।" 
+        }
+    },
+    {
+        price: "€8.00", img: "image/2h ct.jpeg",
+        name: { 
+            es: "Chicken Tikka [NV]", 
+            en: "Chicken Tikka [NV]", 
+            pt: "Chicken Tikka [NV]", 
+            de: "Chicken Tikka [NV]", 
+            fr: "Poulet Tikka [NV]", 
+            zh: "印式烤鸡块 (Chicken Tikka) [NV]", 
+            hi: "चिकन टिक्का [NV]" 
+        },
+        desc: { 
+            es: "Trozos deshuesados de pollo marinados en especias tandoori y asados a la broche.", 
+            en: "Boneless chicken chunks marinated in tandoori spices and grilled on skewers.", 
+            pt: "Pedaços de frango desossados marinados em especiarias tandoori e grelhados no espeto.", 
+            de: "Zarte, knochenlose Hähnchenstücke, in Tandoori-Gewürzen mariniert und am Spieß gegrillt.", 
+            fr: "Morceaux de poulet désossés marinés dans des épices tandoori et grillés sur des brochettes.", 
+            zh: "无骨鸡肉块经过香料完美腌制后，穿串炭火直烤，鲜嫩多汁。", 
+            hi: "बिना हड्डी के चिकन के टुकड़े, जिन्हें तंदूरी मसालों में मैरीनेट करके सीख पर ग्रिल किया गया है।" 
+        }
+    },
+    {
+        price: "€7.50", img: "image/2i cc.jpg",
+        name: { 
+            es: "Pollo al Chilli [NV]", 
+            en: "Chilli Chicken [NV]", 
+            pt: "Frango com Pimenta (Chilli) [NV]", 
+            de: "Chilli-Hähnchen [NV]", 
+            fr: "Poulet au Piment (Chilli) [NV]", 
+            zh: "辣子鸡 (Chilli Chicken) [NV]", 
+            hi: "चिली चिकन [NV]" 
+        },
+        desc: { 
+            es: "Pollo frito crujiente salteado con pimientos, cebollas y una salsa de soja picante estilo indo-chino.", 
+            en: "Crispy fried chicken tossed with bell peppers, onions, and a spicy Indo-Chinese soy sauce.", 
+            pt: "Frango frito crocante salteado con pimentos, cebolas e um molho de soja picante estilo indo-chinês.", 
+            de: "Knusprig frittiertes Hähnchen, geschwenkt mit Paprika, Zwiebeln und einer scharfen indo-chinesischen Sojasauce.", 
+            fr: "Poulet frit croustillant sauté avec des poivrons, des oignons et une sauce soja piquante de style indo-chinois.", 
+            zh: "将酥脆炸鸡块与青椒、洋葱结合, 融入香辣的印式中式酱油风味翻炒而成。", 
+            hi: "कुरकुरा तला हुआ चिकन, जिसे शिमला मिर्च, प्याज और तीखे इंडो-चाइनीज सोया सॉस के साथ टॉस किया गया है।" 
+        }
+    },
+],
+// 3. மூன்றாவது பிரிவு: ACOMPAÑAMIENTOS (SIDE DISHES)
+dish3: [
+    {
+        price: "€3.00", img: "image/3b r.jpeg",
+        name: { 
+            es: "Raita [V]", 
+            en: "Raita [V]", 
+            pt: "Raita [V]", 
+            de: "Raita [V]", 
+            fr: "Raita [V]", 
+            zh: "印式多味酸奶 (Raita) [V]", 
+            hi: "रायता [V]" 
+        },
+        desc: { 
+            es: "Salsa de yogur refrescante con pepino rallado, zanahoria y un toque de especias tostadas.", 
+            en: "Refreshing yogurt side dish mixed with grated cucumber, carrots, and roasted cumin.", 
+            pt: "Molho de iogurte refrescante misturado com pepino ralado, cenoura e cominhos tostados.", 
+            de: "Erfrischende Joghurtsauce mit geriebener Gurke, Karotten und geröstetem Kreuzkümmel.", 
+            fr: "Sauce rafraîchissante au yaourt mélangée avec du concombre râpé, des carottes et du cumin torréfié.", 
+            zh: "将清爽的酸奶与黄瓜丝、胡萝卜丝以及烘焙孜然粉混合而成的解腻配菜。", 
+            hi: "कद्दूकस किए हुए खीरे, गाजर और भुने जीरे के मिश्रण से बना एक ताज़ा और स्वादिष्ट दही का रायता।" 
+        }
+    },
+    {
+        price: "€3.00", img: "image/3c a.jpg",
+        name: { 
+            es: "Papadum [V][VG]", 
+            en: "Papadum [V][VG]", 
+            pt: "Papadum [V][VG]", 
+            de: "Papadum [V][VG]", 
+            fr: "Papadum [V][VG]", 
+            zh: "印度大脆饼 (Papadum) [V][VG]", 
+            hi: "पापड़ [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas crujientes tradicionales de la India, delgadas y recién cocinadas.", 
+            en: "Freshly cooked, thin and crispy traditional Indian lentil flatbread.", 
+            pt: "Pão de lentilha tradicional indiano, fino e crocante, acabado de cozinhar.", 
+            de: "Frisch zubereitetes, dünnes und knuspriges traditionelles indisches Linsenfladenbrot.", 
+            fr: "Galette de lentilles traditionnelle indienne, fine, croustillante et fraîchement préparée.", 
+            zh: "新鲜制作的传统印度薄脆豆饼。", 
+            hi: "ताज़ा तैयार किया गया, पतला और खस्ता पारंपरिक भारतीय पापड़।" 
+        }
+    },
+    {
+        price: "€3.50", img: "image/3d c.jpeg",
+        name: { 
+            es: "Galletas Crujientes Indias [V][VG]", 
+            en: "Indian Crackers [V][VG]", 
+            pt: "Biscoitos Salgados Indianos [V][VG]", 
+            de: "Indische Cracker [V][VG]", 
+            fr: "Crackers Indiens [V][VG]", 
+            zh: "印式酥脆饼干 (Indian Crackers) [V][VG]", 
+            hi: "भारतीय क्रैकर्स (मठरी/नमकीन) [V][VG]" 
+        },
+        desc: { 
+            es: "Aperitivos tradicionales crujientes y salados, sazonados con semillas de comino o carambola.", 
+            en: "Traditional crunchy and savory snacks, lightly seasoned with cumin or carom seeds.", 
+            pt: "Snacks tradicionais crocantes e salgados, levemente temperados com sementes de cominho ou carambola.", 
+            de: "Traditionelle knusprige und herzhafte Snacks, leicht gewürzt mit Kreuzkümmel- oder Ajwainsamen.", 
+            fr: "Biscuits salés traditionnels et croustillants, légèrement assaisonnés de graines de cumin ou de carambole.", 
+            zh: "传统香脆咸味小吃，融入孜然或葛缕子带来独特风味。", 
+            hi: "जीरा या अजवाइन के साथ हल्के मसालेदार, कुरकुरे और स्वादिष्ट पारंपरिक भारतीय नमकीन।" 
+        }
+    },
+    {
+        price: "€2.00", img: "image/3e p.jpg",
+        name: { 
+            es: "Pepinillos Variados [V][VG]", 
+            en: "Mixed Pickle [V][VG]", 
+            pt: "Picles Misto [V][VG]", 
+            de: "Gemischtes Pickle [V][VG]", 
+            fr: "Pickles Mixtes [V][VG]", 
+            zh: "印式什锦辣酱 (Mixed Pickle) [V][VG]", 
+            hi: "मिक्स अचार [V][VG]" 
+        },
+        desc: { 
+            es: "Verduras y frutas variadas encurtidas con aceite de mostaza y especias tradicionales indias picantes.", 
+            en: "Assorted fruits and vegetables pickled with mustard oil and sharp, traditional Indian spices.", 
+            pt: "Frutas e legumes variados em conserva com óleo de mostarda e especiarias indianas picantes.", 
+            de: "Eingelegtes, gemischtes Gemüse und Früchte mit Senföl und scharfen, traditionellen indischen Gewürzen.", 
+            fr: "Fruits et légumes assortis confits dans de l'huile de moutarde et des épices indiennes piquantes.", 
+            zh: "选用多种蔬果，加入芥末油和传统印度辛辣香料腌制而成的风味酸菜。", 
+            hi: "सरसों के तेल और तीखे पारंपरिक भारतीय मसालों से तैयार किया गया मिश्रित फल-सब्जियों का चटपटा अचार।" 
+        }
+    },
+    {
+        price: "€2.50", img: "image/3f mc.jpg",
+        name: { 
+            es: "Chutney de Mango [V][VG]", 
+            en: "Mango Chutney [V][VG]", 
+            pt: "Chutney de Manga [V][VG]", 
+            de: "Mango-Chutney [V][VG]", 
+            fr: "Chutney de Mangue [V][VG]", 
+            zh: "芒果蘸酱 (Mango Chutney) [V][VG]", 
+            hi: "आम की चटनी [V][VG]" 
+        },
+        desc: { 
+            es: "Condimento agridulce y espeso elaborado con mangos maduros y especias aromáticas.", 
+            en: "Sweet and tangy relish made from ripe mangoes blended with aromatic spices.", 
+            pt: "Condimento doce e picante feito de mangas maduras misturadas com especiarias aromáticas.", 
+            de: "Süß-säuerliches, dickflüssiges Relish aus reifen Mangos und aromatischen Gewürzen.", 
+            fr: "Doux et acidulé, ce condiment est préparé à base de mangues mûres et d'épices aromatiques.", 
+            zh: "选用熟芒果慢火熬制，融入芳香香料而成的酸甜浓郁果酱。", 
+            hi: "पके हुए आम और सुगंधित मसालों से तैयार की गई खट्टी-मीठी और स्वादिष्ट चटनी।" 
+        }
+    },
 
-            // 3. ARROZ Y PANES (ரைஸ் மற்றும் ரொட்டி வகைகள்)
-            dish3: [
-                {
-                    price: "€3.00", img: "image/rotti.jpeg",
-                    name: { es: "Roti [V][VG]", en: "Roti [V][VG]", pt: "Roti [V][VG]", de: "Roti [V][DE]", fr: "Roti [V][VG]", zh: "全麦烤饼 Roti [V][VG]", hi: "रोटी [V][VG]" },
-                    desc: { es: "Pan plano integral tradicional, recién cocinado.", en: "Traditional wholemeal flatbread, freshly cooked.", pt: "Pão plano integral tradicional, acabado de cozinhar.", de: "Traditionelles Vollkorn-Fladenbrot, frisch gebacken.", fr: "Pain plat complet traditionnel, fraîchement cuit.", zh: "现点现做的传统全麦扁面饼 Roti。", hi: "तवे पर सिकी हुई पारंपरिक गेहूं की सादी रोटी।" }
-                },
-		{
-                    price: "€3.50", img: "image/rice.jpeg",
-                    name: { es: "Arroz Basmati [V][VG]", en: "Basmati Rice [V][VG]", pt: "Arroz Basmati [V][VG]", de: "Basmati Reis [V][DE]", fr: "Riz Basmati [V][VG]", zh: "印度香米饭 [V][VG]", hi: "बासमती चावल [V][VG]" },
-               desc: { es: "Arroz de grano largo y esponjoso, perfecto para curris.", en: "Fluffy, long-grain rice, perfect for curries.", pt: "Arroz de grano longo e fofinho, perfeito para caris.", de: "Fluffiger, langkörniger Reis, perfekt für Currys.", fr: "Riz à grains longs et moelleux, parfait pour les currys.", zh: "颗粒饱满的长粒香米饭，咖喱的最佳拍档。", hi: "खिले-खिले लंबे दानों वाला सुगंधित चावल जो करी के साथ उत्तम लगता है।" }
-},
-
-           {
-price: "€3.50", img: "image/bn.jpeg",
-name: { es: "Naan con Mantequilla [V]", en: "Butter Naan [V]", pt: "Naan de Manteiga [V]", de: "Butter Naan [V]", fr: "Naan au Beurre [V]", zh: "奶油烤饼 Naan [V]", hi: "बटर नान [V]" },
-desc: { es: "Pan fresco con mantequilla.", en: "Fresh bread with butter.", pt: "Pão fresco com manteiga.", de: "Frisches Brot mit Butter.", fr: "Pain frais au beurre.", zh: "涂抹了浓郁黄油的现烤面饼 Naan。", hi: "तंदूर में पका हुआ मक्खन लगा हुआ ताजा and नरम नान।" }
-},
-{
-price: "€3.95", img: "image/gn.jpeg",
-name: { es: "Naan al Ajo [V]", en: "Garlic Naan [V]", pt: "Naan de Alho [V]", de: "Knoblauch Naan [V]", fr: "Naan à l'Ail [V]", zh: "蒜香烤饼 Naan [V]", hi: "लहसुन नान [V]" },
-desc: { es: "Pan fresco con ajo y hierbas aromáticas.", en: "Fresh bread with garlic and aromatic herbs.", pt: "Pão fresco con alho e ervas aromáticas.", de: "Frisches Brot mit Knoblauch und aromatischen Kräutern.", fr: "Pain frais à l'ail et aux herbes aromatiques.", zh: "伴有新鲜大蒜和芳香草本的现烤面饼。", hi: "बारीक कटे लहसुन और धनिए की पत्तियों वाला खुशबूदार तंदूरी नान।" }
-},
-{
-price: "€3.50", img: "image/raita.jpeg",
-name: { es: "Raita [V]", en: "Raita [V]", pt: "Raita [V]", de: "Raita [V]", fr: "Raita [V]", zh: "酸奶黄瓜 Raita [V]", hi: "रायता [V]" },
-desc: { es: "Acompañamiento de yogur fresco con pepino y especias suaves.", en: "Fresh yogurt accompaniment with cucumber and mild spices.", pt: "Acompanhamento de iogurte fresco com pepino e especiarias suaves.", de: "Frische Joghurtbeilage mit Gurke und milden Gewürzen.", fr: "Accompagnement de yaourt frais avec du concombre et des épices douces.", zh: "清新酸奶黄瓜伴碟，伴有柔和香料。", hi: "ठंडे गाढ़े दही में ककड़ी और हल्के भुने मसालों का पाचक मिश्रण।" }
-}
 ],
 
-
-            // 4. BEBIDAS Y POSTRES (பானங்கள் மற்றும் இனிப்புகள்)
+ // 4. VEGAN 
 dish4: [
+ {
+        price: "€4.50", img: "image/1b vs.jpg",
+        name: { 
+            es: "Sopa de Verduras [V][VG]", 
+            en: "Veg Soup [V][VG]", 
+            pt: "Sopa de Legumes [V][VG]", 
+            de: "Gemüsesuppe [V][VG]", 
+            fr: "Soupe de Légumes [V][VG]", 
+            zh: "蔬菜汤 [V][VG]", 
+            hi: "शाकाहारी सूप [V][VG]" 
+        },
+        desc: { 
+            es: "Una sopa reconfortante y saludable cargada de verduras frescas de temporada y especias suaves.", 
+            en: "A comforting and healthy soup packed with fresh seasonal vegetables and mild spices.", 
+            pt: "Uma sopa reconfortante e saudável repleta de legumes frescos da época e especiarias suaves.", 
+            de: "Eine wohltuende und gesunde Suppe mit frischem Gemüse der Saison und milden Gewürzen.", 
+            fr: "Une soupe réconfortante et saine pleine de légumes frais de saison et d'épices douces.", 
+            zh: "一款由新鲜时令蔬菜和温和香料熬制而成的舒心健康汤品。", 
+            hi: "ताज़ी मौसमी सब्ज़ियों और हल्के मसालों से भरपूर एक आरामदायक और सेहतमंद सूप।" 
+        }
+    },
 {
-price: "€3.50", img: "image/mt.jpeg",
-name: { es: "Té Masala [V]", en: "Masala Chai [V]", pt: "Chá Masala [V]", de: "Masala Chai [V]", fr: "Thé Masala [V]", zh: "印度玛萨拉香料茶 [V]", hi: "मसाला चाय [V]" },
-desc: { es: "Té indio especia elaborado con leche y especias cálidas.", en: "Spiced Indian tea made with milk and warm spices.", pt: "Chá indiano condimentado feito com leite e especiarias quentes.", de: "Gewürzter indischer Tee zubereitet mit Milch und wärmenden Gewürzen.", fr: "Thé indien épicé préparé avec du lait et des épices chaudes.", zh: "融合鲜奶和多种温热香料熬制的传统印度奶茶。", hi: "दूध, अदरक और इलायची आदि गरम मसालों से कड़क पकाई गई चाय।" }
+        price: "€4.00", img: "image/2b sa.jpg",
+        name: { 
+            es: "Samosas [V][VG]", 
+            en: "Samosas [V][VG]", 
+            pt: "Samosas [V][VG]", 
+            de: "Samosas [V][VG]", 
+            fr: "Samoussas [V][VG]", 
+            zh: "萨莫萨三角饺 [V][VG]", 
+            hi: "समोसा [V][VG]" 
+        },
+        desc: { 
+            es: "Empanadillas crujientes rellenas de patata especiada y guisantes.", 
+            en: "Crispy pastries filled with spiced potatoes and peas.", 
+            pt: "Pastéis crocantes recheados com batatas condimentadas e ervilhas.", 
+            de: "Knusprige Teigtaschen gefüllt mit gewürzten Kartoffeln und Erbsen.", 
+            fr: "Feuilletés croustillants farcis de pommes de terre épicées et de petits pois.", 
+            zh: "酥脆的外皮包裹着香料调味的土豆和豌豆。", 
+            hi: "मसालेदार आलू और मटर से भरा खस्ता समोसा।" 
+        }
+    },
+    {
+        price: "€5.00", img: "image/2c ob.jpeg",
+        name: { 
+            es: "Bhajis de Cebolla [V][VG]", 
+            en: "Onion Bhajis [V][VG]", 
+            pt: "Bhajis de Cebola [V][VG]", 
+            de: "Zwiebel-Bhajis [V][VG]", 
+            fr: "Bhajis d'Oignon [V][VG]", 
+            zh: "洋葱巴吉炸物 [V][VG]", 
+            hi: "प्याज की भजिया [V][VG]" 
+        },
+        desc: { 
+            es: "Frituras crujientes de cebolla sazonadas con especias tradicionales.", 
+            en: "Crispy onion fritters seasoned with traditional spices.", 
+            pt: "Fritos de cebola crocantes temperados com especiarias tradicionais.", 
+            de: "Knusprige Zwiebelbällchen, gewürzt mit traditionellen indischen Gewürzen.", 
+            fr: "Beignets d'oignons croustillants assaisonnés d'épices traditionnelles.", 
+            zh: "用传统香料调味炸至香脆的洋葱酥饼。", 
+            hi: "पारंपरिक मसालों के साथ तैयार की गई कटी हुई प्याज की कुरकुरी भजिया।" 
+        }
+    },
+    {
+        price: "€5.50", img: "image/2d k.jpeg",
+        name: { 
+            es: "Pakoras de Berenjena [V][VG]", 
+            en: "Eggplant Pakoda [V][VG]", 
+            pt: "Pakoras de Berinjela [V][VG]", 
+            de: "Auberginen-Pakoda [V][VG]", 
+            fr: "Pakoras d'Aubergine [V][VG]", 
+            zh: "炸茄子 帕科拉 [V][VG]", 
+            hi: "बैंगन के पकोड़े [V][VG]" 
+        },
+        desc: { 
+            es: "Rodajas de berenjena rebozadas en harina de garbanzo especiada y fritas.", 
+            en: "Sliced eggplant dipped in spiced chickpea batter and golden fried.", 
+            pt: "Fatias de berinjela mergulhadas em polme de grão-de-bico condimentado e fritas.", 
+            de: "Auberginenscheiben in gewürztem Kichererbsen-Teigmantel, goldbraun frittiert.", 
+            fr: "Tranches d'aubergine trempées dans une pâte de pois chiches épicée et frites.", 
+            zh: "裹上调味鹰嘴豆粉糊炸至金黄 Extrêmement 酥脆的茄子片。", 
+            hi: "मसालेदार बेसन के घोल में लपेटकर तले हुए बैंगन के कुरकुरे पकोड़े।" 
+        }
+    },
+{
+        price: "€3.00", img: "image/3c a.jpg",
+        name: { 
+            es: "Papadum [V][VG]", 
+            en: "Papadum [V][VG]", 
+            pt: "Papadum [V][VG]", 
+            de: "Papadum [V][VG]", 
+            fr: "Papadum [V][VG]", 
+            zh: "印度大脆饼 (Papadum) [V][VG]", 
+            hi: "पापड़ [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas crujientes tradicionales de la India, delgadas y recién cocinadas.", 
+            en: "Freshly cooked, thin and crispy traditional Indian lentil flatbread.", 
+            pt: "Pão de lentilha tradicional indiano, fino e crocante, acabado de cozinhar.", 
+            de: "Frisch zubereitetes, dünnes und knuspriges traditionelles indisches Linsenfladenbrot.", 
+            fr: "Galette de lentilles traditionnelle indienne, fine, croustillante et fraîchement préparée.", 
+            zh: "新鲜制作的传统印度薄脆豆饼。", 
+            hi: "ताज़ा तैयार किया गया, पतला और खस्ता पारंपरिक भारतीय पापड़।" 
+        }
+    },
+    {
+        price: "€3.50", img: "image/3d c.jpeg",
+        name: { 
+            es: "Galletas Crujientes Indias [V][VG]", 
+            en: "Indian Crackers [V][VG]", 
+            pt: "Biscoitos Salgados Indianos [V][VG]", 
+            de: "Indische Cracker [V][VG]", 
+            fr: "Crackers Indiens [V][VG]", 
+            zh: "印式酥脆饼干 (Indian Crackers) [V][VG]", 
+            hi: "भारतीय क्रैकर्स (मठरी/नमकीन) [V][VG]" 
+        },
+        desc: { 
+            es: "Aperitivos tradicionales crujientes y salados, sazonados con semillas de comino o carambola.", 
+            en: "Traditional crunchy and savory snacks, lightly seasoned with cumin or carom seeds.", 
+            pt: "Snacks tradicionais crocantes e salgados, levemente temperados com sementes de cominho ou carambola.", 
+            de: "Traditionelle knusprige und herzhafte Snacks, leicht gewürzt mit Kreuzkümmel- oder Ajwainsamen.", 
+            fr: "Biscuits salés traditionnels et croustillants, légèrement assaisonnés de graines de cumin ou de carambole.", 
+            zh: "传统香脆咸味小吃，融入孜然或葛缕子带来独特风味。", 
+            hi: "जीरा या अजवाइन के साथ हल्के मसालेदार, कुरकुरे और स्वादिष्ट पारंपरिक भारतीय नमकीन।" 
+        }
+    },
+    {
+        price: "€2.00", img: "image/3e p.jpg",
+        name: { 
+            es: "Pepinillos Variados [V][VG]", 
+            en: "Mixed Pickle [V][VG]", 
+            pt: "Picles Misto [V][VG]", 
+            de: "Gemischtes Pickle [V][VG]", 
+            fr: "Pickles Mixtes [V][VG]", 
+            zh: "印式什锦辣酱 (Mixed Pickle) [V][VG]", 
+            hi: "मिक्स अचार [V][VG]" 
+        },
+        desc: { 
+            es: "Verduras y frutas variadas encurtidas con aceite de mostaza y especias tradicionales indias picantes.", 
+            en: "Assorted fruits and vegetables pickled with mustard oil and sharp, traditional Indian spices.", 
+            pt: "Frutas e legumes variados em conserva com óleo de mostarda e especiarias indianas picantes.", 
+            de: "Eingelegtes, gemischtes Gemüse und Früchte mit Senföl und scharfen, traditionellen indischen Gewürzen.", 
+            fr: "Fruits et légumes assortis confits dans de l'huile de moutarde et des épices indiennes piquantes.", 
+            zh: "选用多种蔬果，加入芥末油和传统印度辛辣香料腌制而成的风味酸菜。", 
+            hi: "सरसों के तेल और तीखे पारंपरिक भारतीय मसालों से तैयार किया गया मिश्रित फल-सब्जियों का चटपटा अचार।" 
+        }
+    },
+    {
+        price: "€2.50", img: "image/3f mc.jpg",
+        name: { 
+            es: "Chutney de Mango [V][VG]", 
+            en: "Mango Chutney [V][VG]", 
+            pt: "Chutney de Manga [V][VG]", 
+            de: "Mango-Chutney [V][VG]", 
+            fr: "Chutney de Mangue [V][VG]", 
+            zh: "芒果蘸酱 (Mango Chutney) [V][VG]", 
+            hi: "आम की चटनी [V][VG]" 
+        },
+        desc: { 
+            es: "Condimento agridulce y espeso elaborado con mangos maduros y especias aromáticas.", 
+            en: "Sweet and tangy relish made from ripe mangoes blended with aromatic spices.", 
+            pt: "Condimento doce e picante feito de mangas maduras misturadas com especiarias aromáticas.", 
+            de: "Süß-säuerliches, dickflüssiges Relish aus reifen Mangos und aromatischen Gewürzen.", 
+            fr: "Doux et acidulé, ce condiment est préparé à base de mangues mûres et d'épices aromatiques.", 
+            zh: "选用熟芒果慢火熬制，融入芳香香料而成的酸甜浓郁果酱。", 
+            hi: "पके हुए आम और सुगंधित मसालों से तैयार की गई खट्टी-मीठी और स्वादिष्ट चटनी।" 
+        }
+    },
+
+{
+        price: "€9.50", img: "image/5b cm.jpeg",
+        name: { 
+            es: "Chana Masala [V][VG]", 
+            en: "Chana Masala [V][VG]", 
+            pt: "Chana Masala [V][VG]", 
+            de: "Chana Masala [V][VG]", 
+            fr: "Chana Masala [V][VG]", 
+            zh: "印式鹰嘴豆咖喱 (Chana Masala) [V][VG]", 
+            hi: "चना मसाला [V][VG]" 
+        },
+        desc: { 
+            es: "Garbanzos tiernos cocinados en una salsa aromática de tomate, cebolla y una mezcla picante de especias masala.", 
+            en: "Tender chickpeas simmered in an aromatic tomato, onion, and spiced masala sauce.", 
+            pt: "Grão-de-bico tenro cozinhado num molho aromático de tomate, cebola e uma mistura picante de especiarias masala.", 
+            de: "Zarte Kichererbsen, köchelnd in einer aromatischen Tomaten-Zwiebel-Saucenmischung mit Gewürzen.", 
+            fr: "Pois chiches tendres mijotés dans une sauce aromatique à la tomate, à l'oignon et aux épices masala.", 
+            zh: "鲜嫩的鹰嘴豆在番茄、洋葱和浓郁的马萨拉香料酱汁中慢火熬制而成。", 
+            hi: "टमाटर, प्याज और तीखे मसाला मिश्रण की सुगंधित ग्रेवी में पकाए गए नरम चने।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5c d.jpg",
+        name: { 
+            es: "Dal Tadka [V][VG]", 
+            en: "Dal Tadka [V][VG]", 
+            pt: "Dal Tadka [V][VG]", 
+            de: "Dal Tadka [V][VG]", 
+            fr: "Dal Tadka [V][VG]", 
+            zh: " 达尔挞咖黄豆咖喱 (Dal Tadka) [V][VG]", 
+            hi: "दाल तड़का [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas amarillas cocidas a la perfección y templadas con comino, ajo, jengibre y chiles picantes.", 
+            en: "Yellow lentils cooked to perfection and tempered with cumin, garlic, ginger, and hot chilies.", 
+            pt: "Lentilhas amarelas cozinhadas na perfeição e temperadas com cominhos, alho, gengibre e malaguetas.", 
+            de: "Gelbe Linsen, perfekt gekocht und mit Kreuzkümmel, Knoblauch, Ingwer und scharfen Chilies verfeinert.", 
+            fr: "Lentilles jaunes cuites à la perfection et relevées de cumin, d'ail, de gingembre et de piments forts.", 
+            zh: "煮得恰到好处的黄扁豆，最后浇上孜然、大蒜、生姜和辣椒爆香的红油（Tadka）。", 
+            hi: "पूरी तरह से पकी हुई पीली दाल, जिसे जीरा, लहसुन, अदरक और मिर्च से तड़का लगाया गया है।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5d m.jpg",
+        name: { 
+            es: "Masoor Dal [V][VG]", 
+            en: "Masoor Dal [V][VG]", 
+            pt: "Masoor Dal [V][VG]", 
+            de: "Masoor Dal [V][VG]", 
+            fr: "Masoor Dal [V][VG]", 
+            zh: "红扁豆咖喱 (Masoor Dal) [V][VG]", 
+            hi: "मसूर दाल [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas rojas ricas y cremosas cocinadas a fuego lento con especias cotidianas de la India y cilantro.", 
+            en: "Rich and creamy red lentils slow-cooked with everyday Indian spices and fresh coriander.", 
+            pt: "Lentilhas vermelhas ricas e cremosas cozinhadas lentamente com especiarias indianas diárias e coentros frescos.", 
+            de: "Reichhaltige und cremig gekochte rote Linsen mit klassischen indischen Gewürzen und frischem Koriander.", 
+            fr: "Lentilles rouges riches et crémeuses mijotées doucement avec des épices indiennes du quotidien et de la coriandre fraîche.", 
+            zh: "浓郁绵软的红扁豆加入日常印度风味香料慢炖，最后撒上新鲜香菜点缀。", 
+            hi: "दैनिक भारतीय मसालों और ताजे धनिये के साथ धीमी आंच पर पकाई गई गाढ़ी और मखमली मसूर दाल।" 
+        }
+    },
+    {
+        price: "€10.50", img: "image/5e mm.jpeg",
+        name: { 
+            es: "Matar Mushroom [V]", 
+            en: "Matar Mushroom [V]", 
+            pt: "Matar Mushroom [V]", 
+            de: "Matar Mushroom [V]", 
+            fr: "Matar Mushroom [V]", 
+            zh: "豌豆炒蘑菇咖喱 (Matar Mushroom) [V]", 
+            hi: "मटर मशरूम [V]" 
+        },
+        desc: { 
+            es: "Champiñones frescos y guisantes verdes cocinados en una salsa deliciosa a base de cebolla y tomate.", 
+            en: "Fresh mushrooms and green peas cooked in a delicious onion-tomato based gravy.", 
+            pt: "Cogumelos frescos e ervilhas verdes cozinhados num molho delicioso à base de cebola e tomate.", 
+            de: "Frische Pilze und grüne Erbsen, zubereitet in einer köstlichen Zwiebel-Tomaten-Sauce.", 
+            fr: "Champignons frais et petits pois cuisinés dans une délicieuse sauce à base d'oignons et de tomates.", 
+            zh: "新鲜的白蘑菇和饱满的青豌豆，放入特制的洋葱番茄风味浓郁酱汁中烹饪而成。", 
+            hi: "प्याज-टमाटर पर आधारित स्वादिष्ट ग्रेवी में पकाए गए ताजे मशरूम और हरी मटर।" 
+        }
+    },
+    {
+        price: "€10.00", img: "image/5f vc.jpeg",
+        name: { 
+            es: "Curry de Verduras Variadas [V][VG]", 
+            en: "Mix Veg Curry [V][VG]", 
+            pt: "Caril de Legumes Mistos [V][VG]", 
+            de: "Gemischtes Gemüsecurry [V][VG]", 
+            fr: "Curry de Légumes Mixtes [V][VG]", 
+            zh: "什锦蔬菜咖喱 (Mix Veg Curry) [V][VG]", 
+            hi: "मिक्स वेज करी [V][VG]" 
+        },
+        desc: { 
+            es: "Una mezcla colorida de verduras de temporada cocinadas en una salsa de curry tradicional ligeramente sazonada.", 
+            en: "A colorful medley of seasonal vegetables cooked in a lightly seasoned traditional curry gravy.", 
+            pt: "Uma mistura colorida de legumes da época cozinhados num molho de caril tradicional levemente temperado.", 
+            de: "Eine bunte Mischung aus Saisongemüse, gekocht in einer leicht gewürzten traditionellen Currysauce.", 
+            fr: "Un mélange coloré de légumes de saison cuisinés dans une sauce curry traditionnelle légèrement assaisonnée.", 
+            zh: "将五彩缤纷的时令蔬菜汇聚一堂，融入调味温和的传统咖喱酱汁中烹制。", 
+            hi: "हल्के मसालों वाली पारंपरिक करी ग्रेवी में पकाई गई मौसमी सब्ज़ियों का एक सतरंगी मिश्रण।" 
+        }
+    },
+    {
+        price: "€11.00", img: "image/5g m.jpg",
+        name: { 
+            es: "Verduras al Mango [V]", 
+            en: "Mango Veg [V]", 
+            pt: "Legumes com Manga [V]", 
+            de: "Mango-Gemüse [V]", 
+            fr: "Légumes à la Mangue [V]", 
+            zh: "芒果伴蔬菜咖喱 (Mango Veg) [V]", 
+            hi: "मैंगो वेज [V]" 
+        },
+        desc: { 
+            es: "Verduras frescas de temporada cocinadas en una salsa cremosa agridulce con pulpa de mango puro.", 
+            en: "Fresh seasonal vegetables cooked in a rich, creamy, sweet-and-savory real mango pulp sauce.", 
+            pt: "Legumes frescos da época cozinhados num molho cremoso, doce e salgado com polpa de manga pura.", 
+            de: "Frisches Saisongemüse in einer reichhaltigen, cremigen und süß-pikanten Sauce aus echtem Mangomark.", 
+            fr: "Légumes frais de saison cuisinés dans une sauce riche, crémeuse et douce-amère à base de pulpe de mangue pure.", 
+            zh: "新鲜时令蔬菜融入由纯正芒果肉熬制的丝滑浓郁酱汁中，口感酸甜美妙。", 
+            hi: "शुद्ध आम के पल्प से बनी मखमली, मीठी और चटपटी ग्रेवी में पकाई गई ताज़ी मौसमी सब्ज़ियाँ।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5h p.jpeg",
+        name: { 
+            es: "Aloo Jeera [V][VG]", 
+            en: "Aloo Jeera [V][VG]", 
+            pt: "Aloo Jeera [V][VG]", 
+            de: "Aloo Jeera [V][VG]", 
+            fr: "Aloo Jeera [V][VG]", 
+            zh: "孜然土豆 (Aloo Jeera) [V][VG]", 
+            hi: "आलू जीरा [V][VG]" 
+        },
+        desc: { 
+            es: "Patatas salteadas crujientes crujientes arrojadas con abundantes semillas de comino, cúrcuma y especias secas.", 
+            en: "Crispy sautéed potato chunks tossed with abundant cumin seeds, turmeric, and dry spices.", 
+            pt: "Pedaços de batata salteados crocantes envolvidos com abundantes sementes de cominho, açafrão-da-índia e especiarias secas.", 
+            de: "Knusprig angebratene Kartoffelstücke, geschwenkt mit reichlich Kreuzkümmelsamen, Kurkuma und trockenen Gewürzen.", 
+            fr: "Morceaux de pommes de terre sautés croustillants enrobés de généreuses graines de cumin, de curcuma et d'épices sèches.", 
+            zh: "外皮焦香的炒土豆块，伴随着浓郁爆香的孜然粒、姜黄粉和干香料翻炒而成。", 
+            hi: "भरपूर जीरा, हल्दी और सूखे मसालों के साथ टॉस किए गए कुरकुरे सूखे भुने आलू के टुकड़े।" 
+        }
+    },
+    {
+        price: "€11.50", img: "image/5i sk.jpg",
+        name: { 
+            es: "Sarson Ka Saag [V]", 
+            en: "Sarson Ka Saag [V]", 
+            pt: "Sarson Ka Saag [V]", 
+            de: "Sarson Ka Saag [V]", 
+            fr: "Sarson Ka Saag [V]", 
+            zh: "印式芥菜泥 (Sarson Ka Saag) [V]", 
+            hi: "सरसों का साग [V]" 
+        },
+        desc: { 
+            es: "Un plato tradicional del norte de la India hecho de hojas de mostaza verde machacadas y cocidas a fuego lento con jengibre y ajo.", 
+            en: "A traditional Northern Indian dish made of mashed mustard greens slow-cooked with ginger and garlic.", 
+            pt: "Um prato tradicional do norte da Índia feito com folhas de mostarda esmagadas e cozinhadas lentamente com gengibre e alho.", 
+            de: "Ein traditionelles nordindisches Gericht aus püriertem Senfgrün, langsam geschmort mit frischem Ingwer und Knoblauch.", 
+            fr: "Un plat traditionnel du nord de l'Inde à base de feuilles de moutarde écrasées et mijotées avec du gingembre et de l'ail.", 
+            zh: "一道经典的北印传统料理，由优质新鲜芥菜叶打成泥后，加入生姜和大蒜慢火煨熟，风味醇厚。", 
+            hi: "अदरक और लहसुन के साथ धीमी आंच पर पकाया गया सरसों के पत्तों का पारंपरिक उत्तर भारतीय साग।" 
+        }
+    },
+{
+        price: "€3.50", img: "image/6b r.jpeg",
+        name: { 
+            es: "Arroz Basmati [V][VG]", 
+            en: "Basmati Rice [V][VG]", 
+            pt: "Arroz Basmati [V][VG]", 
+            de: "Basmati-Reis [V][VG]", 
+            fr: "Riz Basmati [V][VG]", 
+            zh: "印度香米饭 (Basmati Rice) [V][VG]", 
+            hi: "बासमती चावल [V][VG]" 
+        },
+        desc: { 
+            es: "Arroz basmati premium de grano largo, vaporizado e increíblemente aromático.", 
+            en: "Premium long-grain basmati rice, perfectly steamed and fragrant.", 
+            pt: "Arroz basmati premium de grão longo, cozido a vapor e incrivelmente aromático.", 
+            de: "Premium-Langkorn-Basmatireis, perfekt gedämpft und duftend.", 
+            fr: "Riz basmati de qualité supérieure à grains longs, cuit à la vapeur et parfumé.", 
+            zh: "优质长粒印度香米，蒸得颗颗分明，自带独特芬芳。", 
+            hi: "भाप में पके हुए सुगंधित और खिले-खिले प्रीमियम बासमती चावल।" 
+        }
+    },
+    {
+        price: "€10.50", img: "image/6c vb.jpeg",
+        name: { 
+            es: "Biryani de Verduras [V]", 
+            en: "Veg Biryani [V]", 
+            pt: "Biryani de Legumes [V]", 
+            de: "Gemüse-Biryani [V]", 
+            fr: "Biryani de Légumes [V]", 
+            zh: "蔬菜印式 hand-style 焖饭 (Veg Biryani) [V]", 
+            hi: "वेज बिरयानी [V]" 
+        },
+        desc: { 
+            es: "Arroz basmati aromático cocinado a fuego lento con verduras frescas, menta, azafrán y especias exóticas.", 
+            en: "Fragrant basmati rice layered and slow-cooked with fresh garden vegetables, mint, saffron, and exotic spices.", 
+            pt: "Arroz basmati aromático cozinhado lentamente com legumes frescos, hortelã, açafrão e especiarias exóticas.", 
+            de: "Duftender Basmatireis, geschichtet und langsam gekocht mit frischem Gemüse, Minze, Safran und exotischen Gewürzen.", 
+            fr: "Riz basmati parfumé cuit à l'étouffée avec des légumes frais, de la menthe, du safran et des épices exotiques.", 
+            zh: "芳香的香米与时令蔬菜、鲜薄荷、藏红花及热带香料层层码放，慢火焖制而成。", 
+            hi: "ताज़ी सब्ज़ियों, पुदीने, केसर और अनूठे मसालों के साथ धीमी आंच पर पकाई गई सुगंधित बासमती बिरयानी।" 
+        }
+    },
+{
+        price: "€9.50", img: "image/6f vr.jpg",
+        name: { 
+            es: "Arroz Frito con Verduras [V][VG]", 
+            en: "Veg Fried Rice [V][VG]", 
+            pt: "Arroz Frito de Legumes [V][VG]", 
+            de: "Gebratener Reis mit Gemüse [V][VG]", 
+            fr: "Riz Frit aux Légumes [V][VG]", 
+            zh: "蔬菜炒饭 (Veg Fried Rice) [V][VG]", 
+            hi: "वेज फ्राइड राइस [V][VG]" 
+        },
+        desc: { 
+            es: "Arroz salteado en wok con verduras picadas finas, salsa de soja ligera y un toque de pimienta blanca.", 
+            en: "Wok-tossed rice stir-fried with finely chopped garden vegetables, light soy sauce, and white pepper.", 
+            pt: "Arroz salteado em wok com legumes finamente picados, molho de soja leve e uma pitada de pimenta branca.", 
+            de: "Im Wok geschwenkter Reis, pfannengerührt mit fein gehacktem Gemüse, heller Sojasauce und weißem Pfeffer.", 
+            fr: "Riz sauté au wok avec des légumes finement hachés, de la sauce soja légère et une touche de poivre blanc.", 
+            zh: "大火铁锅翻炒的香米饭，搭配细碎的爽脆时蔬、生抽以及少许白胡椒粉，镬气十足。", 
+            hi: "कटी हुई सब्ज़ियों, हल्की सोया सॉस और सफेद मिर्च के साथ वोक (कढ़ाई) में टॉस किया गया फ्राइड राइस।" 
+        }
+    },
+{
+        price: "€2.00", img: "image/7b r.jpeg",
+        name: { 
+            es: "Tandoori Roti [V][VG]", 
+            en: "Tandoori Roti [V][VG]", 
+            pt: "Tandoori Roti [V][VG]", 
+            de: "Tandoori Roti [V][VG]", 
+            fr: "Tandoori Roti [V][VG]", 
+            zh: " 窑烤全麦罗提饼 (Tandoori Roti) [V][VG]", 
+            hi: "तंदूरी रोटी [V][VG]" 
+        },
+        desc: { 
+            es: "Pan plano tradicional de trigo integral indio, horneado al momento en el horno de barro tandoor.", 
+            en: "Traditional whole wheat Indian flatbread, freshly baked on the walls of the tandoor clay oven.", 
+            pt: "Pão plano tradicional de trigo integral indiano, cozido na hora nas paredes do forno de barro tandoor.", 
+            de: "Traditionelles indisches Vollkorn-Fladenbrot, frisch an den Wänden des Tandoor-Lehmofens gebacken.", 
+            fr: "Pain plat indien traditionnel au blé complet, fraîchement cuit sur las parois du four tandoor.", 
+            zh: "选用全麦面粉手工制作，贴在传统泥炉（Tandoor）内壁现烤而成的健康薄饼。", 
+            hi: "गेहूं के आटे से बनी पारंपरिक भारतीय रोटी, जिसे मिट्टी के तंदूर में ताजा सेका गया है।" 
+        }
+    },
+ {
+        price: "€3.00", img: "image/7d gn.jpeg",
+        name: { 
+            es: "Naan de Ajo [V]", 
+            en: "Garlic Naan [V]", 
+            pt: "Naan de Alho [V]", 
+            de: "Knoblauch-Naan [V]", 
+            fr: "Naan al'Ail [V]", 
+            zh: "大蒜烤饼 (Garlic Naan) [V]", 
+            hi: "गार्लिक नान (लहसुन नान) [V]" 
+        },
+        desc: { 
+            es: "Pan plano tierno infusionado con ajo fresco picado y cilantro, horneado al tandoor.", 
+            en: "Tender clay oven flatbread infused with fresh minced garlic and coriander leaves.", 
+            pt: "Pão plano tenro de forno de barro infundido com alho fresco picado e folhas de coentro.", 
+            de: "Zartes Fladenbrot aus dem Lehmofen, verfeinert mit frischem, gehacktem Knoblauch und Korianderblättern.", 
+            fr: "Pain plat tendre cuit au four de terre, infusé d'ail frais émincé et de feuilles de coriandre.", 
+            zh: "在烤饼表面撒满新鲜大蒜碎和香菜叶，入窑烘烤，蒜香浓郁。面香十足。", 
+            hi: "बारीक कटे ताजे लहसुन और हरी धनिया के टुकड़ों से सजाया गया तंदूर में पका स्वादिष्ट नान।" 
+        }
+    },
+{
+        price: "€2.00", img: "image/8c bt.jpg",
+        name: { 
+            es: "Té Negro [V][VG]", 
+            en: "Black Tea [V][VG]", 
+            pt: "Chá Preto [V][VG]", 
+            de: "Schwarztee [V][VG]", 
+            fr: "Thé Noir [V][VG]", 
+            zh: "红茶/黑茶 (Black Tea) [V][VG]", 
+            hi: "काली चाय (ब्लैक टी) [V][VG]" 
+        },
+        desc: { 
+            es: "Té negro puro y reconfortante hecho con hojas de té seleccionadas, servido caliente.", 
+            en: "Pure and comforting black tea brewed from selected tea leaves, served piping hot.", 
+            pt: "Chá preto puro e reconfortante feito de folhas de chá selecionadas, servido bem quente.", 
+            de: "Pure, wohltuende Schwarzteemischung aus ausgewählten Teeblättern, kochend heiß serviert.", 
+            fr: "Thé noir pur et réconfortant infusé à partir de feuilles de thé sélectionnées, servi très chaud.", 
+            zh: "选用精选茶叶冲泡而成的纯正黑红茶，口感醇厚，热气腾腾。", 
+            hi: "चुनिंदा चाय की पत्तियों से तैयार की गई शुद्ध और ताज़गी से भरपूर गरमा-गरम काली चाय।" 
+        }
+    },
+    {
+        price: "€2.00", img: "image/8d gt.jpg",
+        name: { 
+            es: "Té Verde [V][VG]", 
+            en: "Green Tea [V][VG]", 
+            pt: "Chá Verde [V][VG]", 
+            de: "Grüner Tee [V][VG]", 
+            fr: "Thé Vert [V][VG]", 
+            zh: "绿茶 (Green Tea) [V][VG]", 
+            hi: "हरी चाय (ग्रीन टी) [V][VG]" 
+        },
+        desc: { 
+            es: "Té verde ligero, refrescante y rico en antioxidantes, perfecto para después de comer.", 
+            en: "Light, refreshing, and antioxidant-rich green tea, perfect for after your meal.", 
+            pt: "Chá verde leve, refrescante e rico em antioxidantes, perfeito para depois de comer.", 
+            de: "Leichter, erfrischender und antioxidantienreicher grüner Tee, perfekt für nach dem Essen.", 
+            fr: "Thé vert léger, rafraîchissant et riche en antioxydants, idéal après le repas.", 
+            zh: "清淡爽口、富含抗氧化成分 des 绿茶，是饭后消食解腻的完美选择。", 
+            hi: "एंटीऑक्सीडेंट से भरपूर हल्की और ताज़गी देने वाली ग्रीन टी, जो भोजन के बाद के लिए एकदम सही है।" 
+        }
+    },
+{
+price: "€3.50", img: "image/vs.jpeg",
+name: { es: "Ensalada India", en: "Indian Salad", pt: "Salada Indiana", de: "Indischer Salat", fr: "Salade Indienne", zh: "印度风味沙拉", hi: "भारतीय सलाद" },
+desc: { es: "Repollo rallado con semillas de mostaza tostadas y aderezo cítrico.", en: "Shredded cabbage with toasted mustard seeds and citrus dressing.", pt: "Repolho ralado com sementes de mostarda tostadas e molho cítrico.", de: "Geraspelter Kohl mit gerösteten Senfkörnern und Zitrus-Dressing.", fr: "Chou râpé avec des graines de moutarde torréfiées et une vinaigrette aux agrumes.", zh: "爽脆椰菜丝拌入香焙芥末籽及清新柑橘酱汁。", hi: "भुने हुए राई के दानों और नींबू के रस के साथ कद्दूकस की गई ताज़ा पत्तागोभी का सलाद।" }
+},
+
+],
+            // 5. ஐந்தாவது பிரிவு: PLATOS PRINCIPALES (MAIN COURSES - VEG & NON-VEG)
+dish5: [
+    // --- VEGETARIAN MAIN COURSES ---
+    {
+        price: "€9.50", img: "image/5b cm.jpeg",
+        name: { 
+            es: "Chana Masala [V][VG]", 
+            en: "Chana Masala [V][VG]", 
+            pt: "Chana Masala [V][VG]", 
+            de: "Chana Masala [V][VG]", 
+            fr: "Chana Masala [V][VG]", 
+            zh: "印式鹰嘴豆咖喱 (Chana Masala) [V][VG]", 
+            hi: "चना मसाला [V][VG]" 
+        },
+        desc: { 
+            es: "Garbanzos tiernos cocinados en una salsa aromática de tomate, cebolla y una mezcla picante de especias masala.", 
+            en: "Tender chickpeas simmered in an aromatic tomato, onion, and spiced masala sauce.", 
+            pt: "Grão-de-bico tenro cozinhado num molho aromático de tomate, cebola e uma mistura picante de especiarias masala.", 
+            de: "Zarte Kichererbsen, köchelnd in einer aromatischen Tomaten-Zwiebel-Saucenmischung mit Gewürzen.", 
+            fr: "Pois chiches tendres mijotés dans une sauce aromatique à la tomate, à l'oignon et aux épices masala.", 
+            zh: "鲜嫩的鹰嘴豆在番茄、洋葱和浓郁的马萨拉香料酱汁中慢火熬制而成。", 
+            hi: "टमाटर, प्याज और तीखे मसाला मिश्रण की सुगंधित ग्रेवी में पकाए गए नरम चने।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5c d.jpg",
+        name: { 
+            es: "Dal Tadka [V][VG]", 
+            en: "Dal Tadka [V][VG]", 
+            pt: "Dal Tadka [V][VG]", 
+            de: "Dal Tadka [V][VG]", 
+            fr: "Dal Tadka [V][VG]", 
+            zh: " 达尔挞咖黄豆咖喱 (Dal Tadka) [V][VG]", 
+            hi: "दाल तड़का [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas amarillas cocidas a la perfección y templadas con comino, ajo, jengibre y chiles picantes.", 
+            en: "Yellow lentils cooked to perfection and tempered with cumin, garlic, ginger, and hot chilies.", 
+            pt: "Lentilhas amarelas cozinhadas na perfeição e temperadas com cominhos, alho, gengibre e malaguetas.", 
+            de: "Gelbe Linsen, perfekt gekocht und mit Kreuzkümmel, Knoblauch, Ingwer und scharfen Chilies verfeinert.", 
+            fr: "Lentilles jaunes cuites à la perfection et relevées de cumin, d'ail, de gingembre et de piments forts.", 
+            zh: "煮得恰到好处的黄扁豆，最后浇上孜然、大蒜、生姜和辣椒爆香的红油（Tadka）。", 
+            hi: "पूरी तरह से पकी हुई पीली दाल, जिसे जीरा, लहसुन, अदरक और मिर्च से तड़का लगाया गया है।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5d m.jpg",
+        name: { 
+            es: "Masoor Dal [V][VG]", 
+            en: "Masoor Dal [V][VG]", 
+            pt: "Masoor Dal [V][VG]", 
+            de: "Masoor Dal [V][VG]", 
+            fr: "Masoor Dal [V][VG]", 
+            zh: "红扁豆咖喱 (Masoor Dal) [V][VG]", 
+            hi: "मसूर दाल [V][VG]" 
+        },
+        desc: { 
+            es: "Lentejas rojas ricas y cremosas cocinadas a fuego lento con especias cotidianas de la India y cilantro.", 
+            en: "Rich and creamy red lentils slow-cooked with everyday Indian spices and fresh coriander.", 
+            pt: "Lentilhas vermelhas ricas e cremosas cozinhadas lentamente com especiarias indianas diárias e coentros frescos.", 
+            de: "Reichhaltige und cremig gekochte rote Linsen mit klassischen indischen Gewürzen und frischem Koriander.", 
+            fr: "Lentilles rouges riches et crémeuses mijotées doucement avec des épices indiennes du quotidien et de la coriandre fraîche.", 
+            zh: "浓郁绵软的红扁豆加入日常印度风味香料慢炖，最后撒上新鲜香菜点缀。", 
+            hi: "दैनिक भारतीय मसालों और ताजे धनिये के साथ धीमी आंच पर पकाई गई गाढ़ी और मखमली मसूर दाल।" 
+        }
+    },
+    {
+        price: "€10.50", img: "image/5e mm.jpeg",
+        name: { 
+            es: "Matar Mushroom [V]", 
+            en: "Matar Mushroom [V]", 
+            pt: "Matar Mushroom [V]", 
+            de: "Matar Mushroom [V]", 
+            fr: "Matar Mushroom [V]", 
+            zh: "豌豆炒蘑菇咖喱 (Matar Mushroom) [V]", 
+            hi: "मटर मशरूम [V]" 
+        },
+        desc: { 
+            es: "Champiñones frescos y guisantes verdes cocinados en una salsa deliciosa a base de cebolla y tomate.", 
+            en: "Fresh mushrooms and green peas cooked in a delicious onion-tomato based gravy.", 
+            pt: "Cogumelos frescos e ervilhas verdes cozinhados num molho delicioso à base de cebola e tomate.", 
+            de: "Frische Pilze und grüne Erbsen, zubereitet in einer köstlichen Zwiebel-Tomaten-Sauce.", 
+            fr: "Champignons frais et petits pois cuisinés dans une délicieuse sauce à base d'oignons et de tomates.", 
+            zh: "新鲜的白蘑菇和饱满的青豌豆，放入特制的洋葱番茄风味浓郁酱汁中烹饪而成。", 
+            hi: "प्याज-टमाटर पर आधारित स्वादिष्ट ग्रेवी में पकाए गए ताजे मशरूम और हरी मटर।" 
+        }
+    },
+    {
+        price: "€10.00", img: "image/5f vc.jpeg",
+        name: { 
+            es: "Curry de Verduras Variadas [V][VG]", 
+            en: "Mix Veg Curry [V][VG]", 
+            pt: "Caril de Legumes Mistos [V][VG]", 
+            de: "Gemischtes Gemüsecurry [V][VG]", 
+            fr: "Curry de Légumes Mixtes [V][VG]", 
+            zh: "什锦蔬菜咖喱 (Mix Veg Curry) [V][VG]", 
+            hi: "मिक्स वेज करी [V][VG]" 
+        },
+        desc: { 
+            es: "Una mezcla colorida de verduras de temporada cocinadas en una salsa de curry tradicional ligeramente sazonada.", 
+            en: "A colorful medley of seasonal vegetables cooked in a lightly seasoned traditional curry gravy.", 
+            pt: "Uma mistura colorida de legumes da época cozinhados num molho de caril tradicional levemente temperado.", 
+            de: "Eine bunte Mischung aus Saisongemüse, gekocht in einer leicht gewürzten traditionellen Currysauce.", 
+            fr: "Un mélange coloré de légumes de saison cuisinés dans une sauce curry traditionnelle légèrement assaisonnée.", 
+            zh: "将五彩缤纷的时令蔬菜汇聚一堂，融入调味温和的传统咖喱酱汁中烹制。", 
+            hi: "हल्के मसालों वाली पारंपरिक करी ग्रेवी में पकाई गई मौसमी सब्ज़ियों का एक सतरंगी मिश्रण।" 
+        }
+    },
+    {
+        price: "€11.00", img: "image/5g m.jpg",
+        name: { 
+            es: "Verduras al Mango [V]", 
+            en: "Mango Veg [V]", 
+            pt: "Legumes com Manga [V]", 
+            de: "Mango-Gemüse [V]", 
+            fr: "Légumes à la Mangue [V]", 
+            zh: "芒果伴蔬菜咖喱 (Mango Veg) [V]", 
+            hi: "मैंगो वेज [V]" 
+        },
+        desc: { 
+            es: "Verduras frescas de temporada cocinadas en una salsa cremosa agridulce con pulpa de mango puro.", 
+            en: "Fresh seasonal vegetables cooked in a rich, creamy, sweet-and-savory real mango pulp sauce.", 
+            pt: "Legumes frescos da época cozinhados num molho cremoso, doce e salgado com polpa de manga pura.", 
+            de: "Frisches Saisongemüse in einer reichhaltigen, cremigen und süß-pikanten Sauce aus echtem Mangomark.", 
+            fr: "Légumes frais de saison cuisinés dans une sauce riche, crémeuse et douce-amère à base de pulpe de mangue pure.", 
+            zh: "新鲜时令蔬菜融入由纯正芒果肉熬制的丝滑浓郁酱汁中，口感酸甜美妙。", 
+            hi: "शुद्ध आम के पल्प से बनी मखमली, मीठी और चटपटी ग्रेवी में पकाई गई ताज़ी मौसमी सब्ज़ियाँ।" 
+        }
+    },
+    {
+        price: "€9.00", img: "image/5h p.jpeg",
+        name: { 
+            es: "Aloo Jeera [V][VG]", 
+            en: "Aloo Jeera [V][VG]", 
+            pt: "Aloo Jeera [V][VG]", 
+            de: "Aloo Jeera [V][VG]", 
+            fr: "Aloo Jeera [V][VG]", 
+            zh: "孜然土豆 (Aloo Jeera) [V][VG]", 
+            hi: "आलू जीरा [V][VG]" 
+        },
+        desc: { 
+            es: "Patatas salteadas crujientes crujientes arrojadas con abundantes semillas de comino, cúrcuma y especias secas.", 
+            en: "Crispy sautéed potato chunks tossed with abundant cumin seeds, turmeric, and dry spices.", 
+            pt: "Pedaços de batata salteados crocantes envolvidos com abundantes sementes de cominho, açafrão-da-índia e especiarias secas.", 
+            de: "Knusprig angebratene Kartoffelstücke, geschwenkt mit reichlich Kreuzkümmelsamen, Kurkuma und trockenen Gewürzen.", 
+            fr: "Morceaux de pommes de terre sautés croustillants enrobés de généreuses graines de cumin, de curcuma et d'épices sèches.", 
+            zh: "外皮焦香的炒土豆块，伴随着浓郁爆香的孜然粒、姜黄粉和干香料翻炒而成。", 
+            hi: "भरपूर जीरा, हल्दी और सूखे मसालों के साथ टॉस किए गए कुरकुरे सूखे भुने आलू के टुकड़े।" 
+        }
+    },
+    {
+        price: "€11.50", img: "image/5i sk.jpg",
+        name: { 
+            es: "Sarson Ka Saag [V]", 
+            en: "Sarson Ka Saag [V]", 
+            pt: "Sarson Ka Saag [V]", 
+            de: "Sarson Ka Saag [V]", 
+            fr: "Sarson Ka Saag [V]", 
+            zh: "印式芥菜泥 (Sarson Ka Saag) [V]", 
+            hi: "सरसों का साग [V]" 
+        },
+        desc: { 
+            es: "Un plato tradicional del norte de la India hecho de hojas de mostaza verde machacadas y cocidas a fuego lento con jengibre y ajo.", 
+            en: "A traditional Northern Indian dish made of mashed mustard greens slow-cooked with ginger and garlic.", 
+            pt: "Um prato tradicional do norte da Índia feito com folhas de mostarda esmagadas e cozinhadas lentamente com gengibre e alho.", 
+            de: "Ein traditionelles nordindisches Gericht aus püriertem Senfgrün, langsam geschmort mit frischem Ingwer und Knoblauch.", 
+            fr: "Un plat traditionnel du nord de l'Inde à base de feuilles de moutarde écrasées et mijotées avec du gingembre et de l'ail.", 
+            zh: "一道经典的北印传统料理，由优质新鲜芥菜叶打成泥后，加入生姜和大蒜慢火煨熟，风味醇厚。", 
+            hi: "अदरक और लहसुन के साथ धीमी आंच पर पकाया गया सरसों के पत्तों का पारंपरिक उत्तर भारतीय साग।" 
+        }
+    },
+
+    // --- NON-VEGETARIAN MAIN COURSES ---
+    {
+        price: "€12.50", img: "image/5v cc.jpg",
+        name: { 
+            es: "Curry de Pollo Especial Estilo Casero 'Camino' [NV]", 
+            en: "Special Camino Home Style Chicken Curry [NV]", 
+            pt: "Caril de Frango Especial Estilo Caseiro 'Camino' [NV]", 
+	    de: "Spezial Camino Hausgemachtes Hähnchencurry [NV]",
+fr: "Curry de Poulet Spécial Façon Maison 'Camino' [NV]",
+zh: "‘朝圣之路’特色家常鸡肉咖喱 [NV]",
+hi: "विशेष कैमिनो होम स्टाइल चिकन करी [NV]"
+},
+desc: {
+es: "Curry de pollo reconfortante preparado según nuestra receta casera tradicional con especias enteras trituradas.",
+en: "Comforting chicken curry prepared using our traditional household recipe with crushed whole spices.",
+pt: "Caril de frango reconfortante preparado seguindo a nossa receita caseira tradicional com especiarias inteiras esmagadas.",
+de: "Wohltuendes Hähnchencurry nach unserem traditionellen Familienrezept mit frisch zerstoßenen ganzen Gewürzen.",
+fr: "Un curry de poulet réconfortant préparé selon notre recette de famille traditionnelle avec des épices entières concassées.",
+zh: "温馨而纯正的家常鸡肉咖喱，沿用独家传统配方，加入手工研磨的原粒整香料慢熬而成。",
+hi: "कुटे हुए साबुत मसालों के साथ हमारी पारंपरिक पारिवारिक रेसिपी से तैयार की गई स्वादिष्ट चिकन करी।"
+}
 },
 {
-price: "€5.50", img: "image/sonpapadi.jpeg",
-name: { es: "Soan Papdi [V][N]", en: "Soan Papdi [V][N]", pt: "Soan Papdi [V][N]", de: "Soan Papdi [V][N]", fr: "Soan Papdi [V][N]", zh: "索安酥 [V][N]", hi: "सोन पापड़ी [V][N]" },
-desc: { es: "Un delicado dulce indio hojaldrado que se derrite en la boca.", en: "A delicate, flaky Indian sweet that melts in your mouth.", pt: "Um doce indiano delicado e folhado que se derrete na boca.", de: "Eine zarte, blättrige indische Süßigkeit, die im Mund zergeht.", fr: "Une douceur indienne délicate et feuilletée qui fond dans la bouche.", zh: "层次丰富、口感松软，入口即化的传统印度甜点索安酥。", hi: "परतों वाली बेहद महीน पारंपरिक मिठाई जो मुंह में जाते ही घुल जाए।" }
+price: "€12.90", img: "image/5k ct.jpeg",
+name: {
+es: "Chicken Tikka Masala [NV]",
+en: "Chicken Tikka Masala [NV]",
+pt: "Chicken Tikka Masala [NV]",
+de: "Chicken Tikka Masala [NV]",
+fr: "Poulet Tikka Masala [NV]",
+zh: " 提卡烤鸡玛莎拉 (Chicken Tikka Masala) [NV]",
+hi: "चिकन टिक्का मसाला [NV]"
+},
+desc: {
+es: "Trozos de pollo marinados al tandoor cocinados en una suntuosa salsa cremosa de tomate, cebolla y pimientos.",
+en: "Tandoor-grilled chicken chunks cooked in a rich, creamy tomato, onion, and bell pepper sauce.",
+pt: "Pedaços de frango grelhados no tandoor cozinhados num rico e cremoso molho de tomate, cebola e pimentos.",
+de: "Im Tandoor gegrillte Hähnchenstücke in einer reichhaltigen, cremigen Tomaten-Zwiebel-Paprika-Sauce.",
+fr: "Morceaux de poulet grillés au tandoor cuisinés dans une sauce riche et crémeuse à la tomate, à l'oignon et aux poivrons.",
+zh: "将炭火窑烤出的鸡肉块，埋入由番茄、洋葱和甜椒碎熬煮的奶香浓郁酱汁中。",
+hi: "तंदूर में ग्रिल किए गए चिकन के टुकड़े, जिन्हें टमाटर, प्याज और शिमला मिर्च की गाढ़ी मखमली ग्रेवी में पकाया गया है।"
 }
-],
-// 5. ESPECIAL DEL CHEF (ஷெஃப் ஸ்பெஷல்)
-dish5: [
+},
 {
-price: "€5.00", img: "image/pakoda.jpeg",
+price: "€13.00", img: "image/5l bc.jpg",
+name: {
+es: "Pollo a la Mantequilla (Butter Chicken) [NV]",
+en: "Butter Chicken [NV]",
+pt: "Frango com Manteiga (Butter Chicken) [NV]",
+de: "Butter-Hähnchen (Butter Chicken) [NV]",
+fr: "Poulet au Beurre (Butter Chicken) [NV]",
+zh: "奶油黄油鸡 (Butter Chicken) [NV]",
+hi: "बटर चिकन [NV]"
+},
+desc: {
+es: "Pollo tierno deshuesado asado en tandoor mezclado con una salsa de tomate aterciopelada, mantequilla y crema.",
+en: "Tender boneless tandoori chicken simmered in a velvety smooth tomato, butter, and cream sauce.",
+pt: "Frango tandoori desossado tenro cozinhado num molho aveludado de tomate, manteiga e natas.",
+de: "Zartes, knochenloses Tandoori-Hähnchen, geköchelt in einer samtig-weichen Tomaten-Butter-Rahmsauce.",
+fr: "Tendre poulet tandoori désossé mijoté dans une sauce veloutée à la tomate, au beurre et a la crème.",
+zh: "鲜嫩的无骨窑烤鸡肉，浸泡在如丝缎般顺滑的番茄奶油黄油酱汁中，口感甜润温和。",
+hi: "तंदूर में पका बिना हड्डी का नरम चिकन, जो टमाटर, मक्खन और मलाई की मखमली ग्रेवी में तैयार किया गया है।"
+}
+},
+{
+price: "€12.50", img: "image/5m kc.jpeg",
+name: {
+es: "Pollo Karahi [NV]",
+en: "Karai Chicken [NV]",
+pt: "Frango Karahi [NV]",
+de: "Karai-Hähnchen [NV]",
+fr: "Poulet Karahi [NV]",
+zh: " 铁锅干煸鸡咖喱 (Karai Chicken) [NV]",
+hi: "कढ़ाई चिकन [NV]"
+},
+desc: {
+es: "Pollo cocinado en un wok indio (Karahi) tradicional con pimientos, jengibre fresco y especias trituradas.",
+en: "Chicken cooked in a traditional Indian wok (Karahi) with bell peppers, fresh ginger, and coarsely crushed spices.",
+pt: "Frango cozinhado num wok indiano (Karahi) tradicional com pimentos, gengibre fresco e especiarias moídas.",
+de: "Hähnchen zubereitet im traditionellen indischen Wok (Karahi) mit Paprika, frischem Ingwer und grob zerstoßenen Gewürzen.",
+fr: "Poulet cuisiné dans un wok indien traditionnel (Karahi) avec des poivrons, du gingembre frais et des épices grossièrement concassées.",
+zh: "将鸡肉放入印度传统卡拉底深铁锅（Karahi）中，与青椒、鲜生姜和粗磨火辣香料大火翻炒而成。",
+hi: "पारंपरिक भारतीय कढ़ाई में शिमला मिर्च, ताजी अदरक और दरदरे कुटे मसालों के साथ भुना हुआ चिकन।"
+}
+},
+{
+price: "€12.50", img: "image/5n mc.jpeg",
+name: {
+es: "Pollo al Mango [NV]",
+en: "Mango Chicken [NV]",
+pt: "Frango com Manga [NV]",
+de: "Mango-Hähnchen [NV]",
+fr: "Poulet à la Mangue [NV]",
+zh: "芒果鲜鸡肉咖喱 (Mango Chicken) [NV]",
+hi: "मैंगो चिकन [NV]"
+},
+desc: {
+es: "Trocitos de pollo deshuesados cocinados en una salsa de mango deliciosamente dulce y suave con crema.",
+en: "Boneless chicken pieces cooked in a deliciously sweet and mild mango sauce infused with cream.",
+pt: "Pedaços de frango desossados cozinhados num molho de manga deliciosamente doce e suave com natas.",
+de: "Knochenlose Hähnchenstücke in einer herrlich süßen und milden Mangosauce, verfeinert mit Sahne.",
+fr: "Morceaux de poulet désossés cuisinés dans une sauce à la mangue délicieusement douce et sucrée, enrichie de crème.",
+zh: "鲜嫩无骨鸡肉块在香甜浓郁的芒果酱汁中烹调，并伴有奶油香气，深受大众喜爱。",
+hi: "मलाईदार और मीठी आम की ग्रेवी में पकाए गए बिना हड्डी के चिकन के स्वादिष्ट टुकड़े।"
+}
+},
+{
+price: "€12.90", img: "image/5o cv.jpg",
+name: {
+es: "Pollo Vindaloo (Muy Picante) [NV]",
+en: "Chicken Vindaloo (Very Spicy) [NV]",
+pt: "Frango Vindaloo (Muito Picante) [NV]",
+de: "Chicken Vindaloo (Sehr Scharf) [NV]",
+fr: "Poulet Vindaloo (Très Épicé) [NV]",
+zh: " 果阿酸辣文达卢鸡 (Chicken Vindaloo - 特辣) [NV]",
+hi: "चिकन विन्दालू (बेहद तीखा) [NV]"
+},
+desc: {
+es: "Un plato ardiente de Goa hecho con pollo, patatas, vinagre de vino y chiles rojos secos súper picantes.",
+en: "A fiery Goan dish featuring chicken and potatoes slow-cooked in a sharp vinegar and red-chili paste gravy.",
+pt: "Um prato ardente de Goa com frango e batatas cozinhados lentamente num molho de vinagre e pasta de malagueta vermelha.",
+de: "Ein feuriges Gericht aus Goa mit Hähnchen und Kartoffeln, langsam geschmort in einer scharfen Essig- und roten Chilipasten-Sauce.",
+fr: "Un plat brûlant de Goa associant poulet et pommes de terre mijotés dans une sauce piquante au vinaigre et à la pâte de piment rouge.",
+zh: "源自果阿的火辣名菜，将鸡肉与土豆浸入带有锋利果醋和大量干红辣椒酱的浓汤中慢炖，辣劲十足。",
+hi: "सिरके और लाल मिर्च के तीखे पेस्ट की ग्रेवी में आलू के साथ पकाया गया गोवा का बेहद तीखा चिकन।"
+}
+},
+{
+price: "€12.50", img: "image/5p cs.jpeg",
+name: {
+es: "Chicken Sabji [NV]",
+en: "Chicken Sabji [NV]",
+pt: "Chicken Sabji [NV]",
+de: "Chicken Sabji [NV]",
+fr: "Poulet Sabji [NV]",
+zh: "蔬菜焖鸡肉 (Chicken Sabji) [NV]",
+hi: "चिकन सब्जी [NV]"
+},
+desc: {
+es: "Trozos de pollo jugosos salteados junto con una variedad de verduras frescas en una salsa de curry ligera.",
+en: "Juicy chicken pieces stir-fried alongside an assortment of fresh garden vegetables in a light curry sauce.",
+pt: "Pedaços de frango suculentos salteados juntamente com uma variedade de legumes frescos num molho de caril leve.",
+de: "Saftige Hähnchenstücke, pfannengerührt mit einer Auswahl an frischem Gartengemüse in einer leichten Currysauce.",
+fr: "Morceaux de poulet juteux sautés avec un assortiment de légumes frais du jardin dans une sauce curry légère.",
+zh: "多汁的鸡肉块与多款田园时鲜蔬菜一同下锅翻炒，收干在清爽的咖喱汁中。",
+hi: "हल्की करी ग्रेवी में ताज़ा बगीचे की सब्ज़ियों के साथ भुने हुए चिकन के रसीले टुकड़े।"
+}
+},
+{
+price: "€12.50", img: "image/5r cs.jpg",
+name: {
+es: "Pollo al Saag (Espinacas) [NV]",
+en: "Chicken Saag [NV]",
+pt: "Frango com Saag (Espinafres) [NV]",
+de: "Chicken Saag (mit Spinat) [NV]",
+fr: "Poulet Saag (Aux Épinards) [NV]",
+zh: "菠菜蓉烩鸡肉 (Chicken Saag) [NV]",
+hi: "चिकन साग (पालक चिकन) [NV]"
+},
+desc: {
+es: "Pollo tierno deshuesado cocinado a fuego lento en una salsa rica y cremosa de espinacas frescas sazonada con jengibre.",
+en: "Tender boneless chicken simmered in a rich, velvety fresh spinach puree tempered with ginger.",
+pt: "Frango desossado tenro cozinhado lentamente num puré de espinafres frescos rico e aveludado temperado com gengibre.",
+de: "Zartes, knochenloses Hähnchen, geköchelt in einem reichhaltigen, samtigen Püree aus frischem Spinat und Ingwer.",
+fr: "Tendre poulet désossé mijoté dans une purée d'épinards frais riche et veloutée, relevée de jengibre.",
+zh: "鲜嫩无骨鸡肉在浓郁幼滑的鲜菠菜泥中低火慢煨，带有些许生姜爆香的独特风味。",
+hi: "अदरक के तड़के वाले ताजे पालक की मखमली ग्रेवी में पकाया गया बिना हड्डी का नरम चिकन।"
+}
+},
+{
+price: "€14.50", img: "image/5s p.jpeg",
+name: {
+es: "Langostinos Karahi [NV]",
+en: "Karai Prawns [NV]",
+pt: "Camarões Karahi [NV]",
+de: "Karai-Garnelen [NV]",
+fr: "Crevettes Karahi [NV]",
+zh: "铁锅大虾咖喱 (Karai Prawns) [NV]",
+hi: "कढ़ाई झींगा (कढ़ाई प्रॉन्स) [NV]"
+},
+desc: {
+es: "Langostinos suculentos cocinados a alta temperatura con tomates, pimientos verdes y aromáticas especias molidas.",
+en: "Succulent prawns cooked on high heat with crushed tomatoes, green bell peppers, and rustic ground spices.",
+pt: "Camarões suculentos cozinhados em lume forte com tomates esmagados, pimentos verdes e especiarias moídas rústicas.",
+de: "Saftige Riesengarnelen, bei starker Hitze mit passierten Tomaten, grünen Paprika und rustikal gemahlenen Gewürzen zubereitet.",
+fr: "Crevettes succulentes cuisinées à feu vif avec des tomates concassées, des poivrons verts et des épices moulues rustiques.",
+zh: "多汁饱满的大虾在大铁锅中用大火快炒，加入番茄碎、青椒和秘制粗磨现炒香料，鲜甜惹味。",
+hi: "कटे हुए टमाटर, हरी शिमला मिर्च और देसी पिसे मसालों के साथ तेज़ आंच पर पकाए गए रसीले झींगे।"
+}
+},
+{
+price: "€14.00", img: "image/5t pc.jpg",
+name: {
+es: "Curry de Langostinos [NV]",
+en: "Prawns Curry [NV]",
+pt: "Caril de Camarão [NV]",
+de: "Garnelen-Curry [NV]",
+fr: "Curry de Crevettes [NV]",
+zh: "经典大虾咖喱 (Prawns Curry) [NV]",
+hi: "झींगा करी (प्रॉन्स करी) [NV]"
+},
+desc: {
+es: "Langostinos cocinados con una salsa de coco y cebolla tradicional inspirada en la costa, sazonada con mostaza.",
+en: "Prawns cooked in a traditional coastal-inspired onion sauce finished with coconut milk and mustard seeds.",
+pt: "Camarões cozinhados num molho tradicional de cebola de inspiração costeira com leite de coco e sementes de mostarda.",
+de: "Garnelen in einer traditionellen, von der Küste inspirierten Zwiebelsauce, verfeinert mit Kokosmilch und Senfkörnern.",
+fr: "Crevettes cuisinées dans une sauce traditionnelle à l'oignon d'inspiration côtière, agrémentée de lait de coco et de graines de moutarde.",
+zh: "充满沿海椰香风味的大虾咖喱，佐以洋葱浓汤基地，融入香浓椰奶和黑 mustard 籽爆香调理。",
+hi: "तटीय शैली की पारंपरिक प्याज ग्रेवी, नारियल के दूध और सरसों के दानों के साथ पकाए गए झींगे।"
+}
+},
+],
+           // 6. ஆறாவது பிரிவு: ARROZ Y BIRYANI (RICE & BIRYANI)
+dish6: [
+    {
+        price: "€3.50", img: "image/6b r.jpeg",
+        name: { 
+            es: "Arroz Basmati [V][VG]", 
+            en: "Basmati Rice [V][VG]", 
+            pt: "Arroz Basmati [V][VG]", 
+            de: "Basmati-Reis [V][VG]", 
+            fr: "Riz Basmati [V][VG]", 
+            zh: "印度香米饭 (Basmati Rice) [V][VG]", 
+            hi: "बासमती चावल [V][VG]" 
+        },
+        desc: { 
+            es: "Arroz basmati premium de grano largo, vaporizado e increíblemente aromático.", 
+            en: "Premium long-grain basmati rice, perfectly steamed and fragrant.", 
+            pt: "Arroz basmati premium de grão longo, cozido a vapor e incrivelmente aromático.", 
+            de: "Premium-Langkorn-Basmatireis, perfekt gedämpft und duftend.", 
+            fr: "Riz basmati de qualité supérieure à grains longs, cuit à la vapeur et parfumé.", 
+            zh: "优质长粒印度香米，蒸得颗颗分明，自带独特芬芳。", 
+            hi: "भाप में पके हुए सुगंधित और खिले-खिले प्रीमियम बासमती चावल।" 
+        }
+    },
+    {
+        price: "€10.50", img: "image/6c vb.jpeg",
+        name: { 
+            es: "Biryani de Verduras [V]", 
+            en: "Veg Biryani [V]", 
+            pt: "Biryani de Legumes [V]", 
+            de: "Gemüse-Biryani [V]", 
+            fr: "Biryani de Légumes [V]", 
+            zh: "蔬菜印式 hand-style 焖饭 (Veg Biryani) [V]", 
+            hi: "वेज बिरयानी [V]" 
+        },
+        desc: { 
+            es: "Arroz basmati aromático cocinado a fuego lento con verduras frescas, menta, azafrán y especias exóticas.", 
+            en: "Fragrant basmati rice layered and slow-cooked with fresh garden vegetables, mint, saffron, and exotic spices.", 
+            pt: "Arroz basmati aromático cozinhado lentamente com legumes frescos, hortelã, açafrão e especiarias exóticas.", 
+            de: "Duftender Basmatireis, geschichtet und langsam gekocht mit frischem Gemüse, Minze, Safran und exotischen Gewürzen.", 
+            fr: "Riz basmati parfumé cuit à l'étouffée avec des légumes frais, de la menthe, du safran et des épices exotiques.", 
+            zh: "芳香的香米与时令蔬菜、鲜薄荷、藏红花及热带香料层层码放，慢火焖制而成。", 
+            hi: "ताज़ी सब्ज़ियों, पुदीने, केसर और अनूठे मसालों के साथ धीमी आंच पर पकाई गई सुगंधित बासमती बिरयानी।" 
+        }
+    },
+    {
+        price: "€12.50", img: "image/6d cb.jpeg",
+        name: { 
+            es: "Biryani de Pollo [NV]", 
+            en: "Chicken Biryani [NV]", 
+            pt: "Biryani de Frango [NV]", 
+            de: "Hähnchen-Biryani [NV]", 
+            fr: "Biryani de Poulet [NV]", 
+            zh: "鸡肉印式焖饭 (Chicken Biryani) [NV]", 
+            hi: "चिकन बिरयानी [NV]" 
+        },
+        desc: { 
+            es: "Trozos de pollo tiernos marinados cocinados con arroz basmati aromático y especias ricas estilo Dum.", 
+            en: "Tender marinated chicken pieces slow-cooked with spiced aromatic basmati rice in traditional Dum style.", 
+            pt: "Pedaços de frango tenros e marinados cozinhados com arroz basmati aromático e especiarias no estilo Dum.", 
+            de: "Zarte, marinierte Hähnchenstücke, langsam gekocht mit gewürztem, aromatischem Basmatireis nach traditioneller Dum-Art.", 
+            fr: "Morceaux de poulet tendres et marinés cuits à l'étouffée avec du riz basmati épicé selon le style traditionnel Dum.", 
+            zh: "鲜嫩的腌制鸡肉与调味香米一起放入密封锅中，采用传统 Dum vertical 焖法慢火煨成。", 
+            hi: "पारंपरिक दम शैली में सुगंधित मसालों और बासमती चावल के साथ पकाए गए मैरीनेटेड चिकन के रसीले टुकड़े।" 
+        }
+    },
+    {
+        price: "€14.50", img: "image/6e pb.jpeg",
+        name: { 
+            es: "Biryani de Langostinos [NV]", 
+            en: "Prawns Biryani [NV]", 
+            pt: "Biryani de Camarão [NV]", 
+            de: "Garnelen-Biryani [NV]", 
+            fr: "Biryani de Crevettes [NV]", 
+            zh: "大虾印式焖饭 (Prawns Biryani) [NV]", 
+            hi: "प्रॉन्स बिरयानी (झींगा बिरयानी) [NV]" 
+        },
+        desc: { 
+            es: "Langostinos jugosos cocinados junto con arroz basmati y una mezcla fragante de masala, menta y cilantro.", 
+            en: "Juicy prawns cooked alongside basmati rice infused with a fragrant blend of masala, mint, and fresh coriander.", 
+            pt: "Camarões suculentos cozinhados juntamente com arroz basmati infundido com uma mistura aromática de masala, hortelã e coentros.", 
+            de: "Saftige Riesengarnelen, gekocht mit Basmatireis und einer aromatischen Mischung aus Masala, Minze und frischem Koriander.", 
+            fr: "Crevettes juteuses cuisinées avec du riz basmati infusé d'un mélange parfumé de masala, de menthe et de coriandre fraîche.", 
+            zh: "肥美多汁的大虾与吸饱香料的香米结合，散发着马萨拉、薄荷和新鲜香菜的复合香气。", 
+            hi: "मसाले, पुदीने और ताजे धनिये के सुगंधित मिश्रण के साथ बासमती चावल में पकाए गए शानदार झींगे।" 
+        }
+    },
+    {
+        price: "€9.50", img: "image/6f vr.jpg",
+        name: { 
+            es: "Arroz Frito con Verduras [V][VG]", 
+            en: "Veg Fried Rice [V][VG]", 
+            pt: "Arroz Frito de Legumes [V][VG]", 
+            de: "Gebratener Reis mit Gemüse [V][VG]", 
+            fr: "Riz Frit aux Légumes [V][VG]", 
+            zh: "蔬菜炒饭 (Veg Fried Rice) [V][VG]", 
+            hi: "वेज फ्राइड राइस [V][VG]" 
+        },
+        desc: { 
+            es: "Arroz salteado en wok con verduras picadas finas, salsa de soja ligera y un toque de pimienta blanca.", 
+            en: "Wok-tossed rice stir-fried with finely chopped garden vegetables, light soy sauce, and white pepper.", 
+            pt: "Arroz salteado em wok com legumes finamente picados, molho de soja leve e uma pitada de pimenta branca.", 
+            de: "Im Wok geschwenkter Reis, pfannengerührt mit fein gehacktem Gemüse, heller Sojasauce und weißem Pfeffer.", 
+            fr: "Riz sauté au wok avec des légumes finement hachés, de la sauce soja légère et une touche de poivre blanc.", 
+            zh: "大火铁锅翻炒的香米饭，搭配细碎的爽脆时蔬、生抽以及少许白胡椒粉，镬气十足。", 
+            hi: "कटी हुई सब्ज़ियों, हल्की सोया सॉस और सफेद मिर्च के साथ वोक (कढ़ाई) में टॉस किया गया फ्राइड राइस।" 
+        }
+    },
+    {
+        price: "€11.00", img: "image/6g cr.jpg",
+        name: { 
+            es: "Arroz Frito con Pollo [NV]", 
+            en: "Chicken Fried Rice [NV]", 
+            pt: "Arroz Frito de Frango [NV]", 
+            de: "Gebratener Reis mit Hähnchen [NV]", 
+            fr: "Riz Frit au Poulet [NV]", 
+            zh: "鸡肉炒饭 (Chicken Fried Rice) [NV]", 
+            hi: "चिकन फ्राइड राइस [NV]" 
+        },
+        desc: { 
+            es: "Arroz salteado en wok con pollo desmenuzado tierno, verduras picadas y condimentos sabrosos.", 
+            en: "Wok-tossed rice stir-fried with savory shredded chicken, crisp vegetables, and aromatic seasoning.", 
+            pt: "Arroz salteado em wok com frango desfiado tenro, legumes picados e temperos saborosos.", 
+            de: "Im Wok geschwenkter Reis, pfannengerührt mit zartem Hähnchenfleisch, knackigem Gemüse und aromatischen Gewürzen.", 
+            fr: "Riz sauté au wok avec du poulet effiloché tendre, des légumes croquants et des assaisonnements savoureux.", 
+            zh: "鲜嫩鸡丝与碎蔬菜加入饱满的长粒米中，热锅大火快炒，调味咸香四溢。", 
+            hi: "चिकन के टुकड़ों, ताज़ा सब्ज़ियों और सुगंधित मसालों के साथ वोक में तेज़ आंच पर भुना हुआ फ्राइड राइस।" 
+        }
+    },
+],
+
+// 7. ஏழாவது பிரிவு: PAN Y ROTI (BREAD & ROTI)
+dish7: [
+    {
+        price: "€2.00", img: "image/7b r.jpeg",
+        name: { 
+            es: "Tandoori Roti [V][VG]", 
+            en: "Tandoori Roti [V][VG]", 
+            pt: "Tandoori Roti [V][VG]", 
+            de: "Tandoori Roti [V][VG]", 
+            fr: "Tandoori Roti [V][VG]", 
+            zh: " 窑烤全麦罗提饼 (Tandoori Roti) [V][VG]", 
+            hi: "तंदूरी रोटी [V][VG]" 
+        },
+        desc: { 
+            es: "Pan plano tradicional de trigo integral indio, horneado al momento en el horno de barro tandoor.", 
+            en: "Traditional whole wheat Indian flatbread, freshly baked on the walls of the tandoor clay oven.", 
+            pt: "Pão plano tradicional de trigo integral indiano, cozido na hora nas paredes do forno de barro tandoor.", 
+            de: "Traditionelles indisches Vollkorn-Fladenbrot, frisch an den Wänden des Tandoor-Lehmofens gebacken.", 
+            fr: "Pain plat indien traditionnel au blé complet, fraîchement cuit sur las parois du four tandoor.", 
+            zh: "选用全麦面粉手工制作，贴在传统泥炉（Tandoor）内壁现烤而成的健康薄饼。", 
+            hi: "गेहूं के आटे से बनी पारंपरिक भारतीय रोटी, जिसे मिट्टी के तंदूर में ताजा सेका गया है।" 
+        }
+    },
+    {
+        price: "€2.50", img: "image/7c bn.jpeg",
+        name: { 
+            es: "Naan de Mantequilla [V]", 
+            en: "Butter Naan [V]", 
+            pt: "Naan de Manteiga [V]", 
+            de: "Butter-Naan [V]", 
+            fr: "Naan au Beurre [V]", 
+            zh: "黄油烤饼 (Butter Naan) [V]", 
+            hi: "बटर नान [V]" 
+        },
+        desc: { 
+            es: "Pan plano de harina refinada, suave y esponjoso, untado generosamente con mantequilla derretida.", 
+            en: "Soft and fluffy leavened white flour flatbread, generously brushed with melted butter.", 
+            pt: "Pão plano de farinha refinada, macio e fofo, generosamente pincelado com manteiga derretida.", 
+            de: "Weiches und fluffiges Fladenbrot aus feinem Weizenmehl, großzügig mit geschmolzener Butter bestrichen.", 
+            fr: "Pain plat en farine blanche, doux et moelleux, généreusement badigeonné de beurre fondu.", 
+            zh: "口感松软而富有弹性的发面精白面饼，出炉后刷上一层厚厚的融化黄油，香气扑鼻。", 
+            hi: "मैदे से बना हुआ नरम और फूला हुआ नान, जिस पर पिघला हुआ मक्खन लगाया गया है।" 
+        }
+    },
+    {
+        price: "€3.00", img: "image/7d gn.jpeg",
+        name: { 
+            es: "Naan de Ajo [V]", 
+            en: "Garlic Naan [V]", 
+            pt: "Naan de Alho [V]", 
+            de: "Knoblauch-Naan [V]", 
+            fr: "Naan al'Ail [V]", 
+            zh: "大蒜烤饼 (Garlic Naan) [V]", 
+            hi: "गार्लिक नान (लहसुन नान) [V]" 
+        },
+        desc: { 
+            es: "Pan plano tierno infusionado con ajo fresco picado y cilantro, horneado al tandoor.", 
+            en: "Tender clay oven flatbread infused with fresh minced garlic and coriander leaves.", 
+            pt: "Pão plano tenro de forno de barro infundido com alho fresco picado e folhas de coentro.", 
+            de: "Zartes Fladenbrot aus dem Lehmofen, verfeinert mit frischem, gehacktem Knoblauch und Korianderblättern.", 
+            fr: "Pain plat tendre cuit au four de terre, infusé d'ail frais émincé et de feuilles de coriandre.", 
+            zh: "在烤饼表面撒满新鲜大蒜碎和香菜叶，入窑烘烤，蒜香浓郁。面香十足。", 
+            hi: "बारीक कटे ताजे लहसुन और हरी धनिया के टुकड़ों से सजाया गया तंदूर में पका स्वादिष्ट नान।" 
+        }
+    },
+    {
+        price: "€3.50", img: "image/7e cn.jpeg",
+        name: { 
+            es: "Naan de Queso [V]", 
+            en: "Cheese Naan [V]", 
+            pt: "Naan de Queijo [V]", 
+            de: "Käse-Naan [V]", 
+            fr: "Naan au Fromage [V]", 
+            zh: "芝士奶酪烤饼 (Cheese Naan) [V]", 
+            hi: "चीज़ नान [V]" 
+        },
+        desc: { 
+            es: "Pan plano artesanal cocinado al tandoor, relleno en su interior con delicioso queso derretido.", 
+            en: "Artisanal leavened flatbread stuffed with a generous filling of delicious melted cheese.", 
+            pt: "Pão plano artesanal cozinhado no tandoor, recheado no seu interior com delicioso queijo derretido.", 
+            de: "Handgemachtes Fladenbrot aus dem Tandoor, gefüllt mit einer reichhaltigen Portion geschmolzenem Käse.", 
+            fr: "Pain plat artisanal cuit au tandoor, farci d'un cœur généreux de délicieux fromage fondu.", 
+            zh: "纯手工制作的发烤饼，中间包裹着满满的浓郁芝士，烤制后带有拉丝口感，极为诱人。", 
+            hi: "स्वादिष्ट पिघले हुए चीज़ (पनीर) की स्टफिंग से भरा हुआ तंदूर में भुना हुआ स्वादिष्ट नान।" 
+        }
+    },
+],
+
+
+           
+// 8. எட்டாவது பிரிவு: BEBIDAS Y POSTRES (DRINKS AND DESSERTS)
+dish8: [
+    // --- DRINKS ---
+    {
+        price: "€2.50", img: "image/8b mt.jpeg",
+        name: { 
+            es: "Té Masala (Chai)", 
+            en: "Masala Tea", 
+            pt: "Chá Masala", 
+            de: "Masala-Tee", 
+            fr: "Thé Masala", 
+            zh: "印式香料奶茶 (Masala Tea)", 
+            hi: "मसाला चाय" 
+        },
+        desc: { 
+            es: "Té negro tradicional de la India hervido con leche fresca, jengibre y una mezcla de especias aromáticas.", 
+            en: "Traditional Indian black tea brewed with fresh milk, ginger, and a blend of aromatic spices.", 
+            pt: "Chá preto tradicional indiano fervido com leite fresco, gengibre e uma mistura de especiarias aromáticas.", 
+            de: "Traditioneller indischer Schwarztee, aufgebrüht mit frischer Milch, Ingwer und einer Mischung aromatischer Gewürze.", 
+            fr: "Thé noir indien traditionnel infusé avec du lait frais, du gingembre et un mélange d'épices aromatiques.", 
+            zh: "传统的印度黑茶，加入鲜牛奶、生姜以及肉桂、丁香等复合芳香香料一同熬煮而成。", 
+            hi: "ताजे दूध, अदरक और सुगंधित मसालों के मिश्रण के साथ उबाली गई पारंपरिक भारतीय ब्लैक टी।" 
+        }
+    },
+    {
+        price: "€2.00", img: "image/8c bt.jpg",
+        name: { 
+            es: "Té Negro [V][VG]", 
+            en: "Black Tea [V][VG]", 
+            pt: "Chá Preto [V][VG]", 
+            de: "Schwarztee [V][VG]", 
+            fr: "Thé Noir [V][VG]", 
+            zh: "红茶/黑茶 (Black Tea) [V][VG]", 
+            hi: "काली चाय (ब्लैक टी) [V][VG]" 
+        },
+        desc: { 
+            es: "Té negro puro y reconfortante hecho con hojas de té seleccionadas, servido caliente.", 
+            en: "Pure and comforting black tea brewed from selected tea leaves, served piping hot.", 
+            pt: "Chá preto puro e reconfortante feito de folhas de chá selecionadas, servido bem quente.", 
+            de: "Pure, wohltuende Schwarzteemischung aus ausgewählten Teeblättern, kochend heiß serviert.", 
+            fr: "Thé noir pur et réconfortant infusé à partir de feuilles de thé sélectionnées, servi très chaud.", 
+            zh: "选用精选茶叶冲泡而成的纯正黑红茶，口感醇厚，热气腾腾。", 
+            hi: "चुनिंदा चाय की पत्तियों से तैयार की गई शुद्ध और ताज़गी से भरपूर गरमा-गरम काली चाय।" 
+        }
+    },
+    {
+        price: "€2.00", img: "image/8d gt.jpg",
+        name: { 
+            es: "Té Verde [V][VG]", 
+            en: "Green Tea [V][VG]", 
+            pt: "Chá Verde [V][VG]", 
+            de: "Grüner Tee [V][VG]", 
+            fr: "Thé Vert [V][VG]", 
+            zh: "绿茶 (Green Tea) [V][VG]", 
+            hi: "हरी चाय (ग्रीन टी) [V][VG]" 
+        },
+        desc: { 
+            es: "Té verde ligero, refrescante y rico en antioxidantes, perfecto para después de comer.", 
+            en: "Light, refreshing, and antioxidant-rich green tea, perfect for after your meal.", 
+            pt: "Chá verde leve, refrescante e rico em antioxidantes, perfeito para depois de comer.", 
+            de: "Leichter, erfrischender und antioxidantienreicher grüner Tee, perfekt für nach dem Essen.", 
+            fr: "Thé vert léger, rafraîchissant et riche en antioxydants, idéal après le repas.", 
+            zh: "清淡爽口、富含抗氧化成分 des 绿茶，是饭后消食解腻的完美选择。", 
+            hi: "एंटीऑक्सीडेंट से भरपूर हल्की और ताज़गी देने वाली ग्रीन टी, जो भोजन के बाद के लिए एकदम सही है।" 
+        }
+    },
+
+    // --- DESSERTS ---
+    {
+        price: "€4.00", img: "image/8e gb.jpg",
+        name: { 
+            es: "Gulab Jamun Casero [V]", 
+            en: "Homemade Gulab Jamun [V]", 
+            pt: "Gulab Jamun Caseiro [V]", 
+            de: "Hausgemachtes Gulab Jamun [V]", 
+            fr: "Gulab Jamun Maison [V]", 
+            zh: "自制玫瑰炸奶球 (Homemade Gulab Jamun) [V]", 
+            hi: "घर का बना गुलाब जामुन [V]" 
+        },
+        desc: { 
+            es: "Deliciosas esferas de leche condensada frotadas, fritas y sumergidas en un almíbar tibio perfumado con agua de rosas y cardamomo.", 
+            en: "Soft, golden milk-solid dumplings deep-fried and soaked in a warm cardamom and rose water sugar syrup.", 
+            pt: "Deliciosas esferas de leite frito e mergulhadas num xarope de açúcar quente perfumado com água de rosas e cardamomo.", 
+            de: "Weiche, goldbraune Milchbällchen, frittiert und eingelegt in einem warmen, mit Kardamom und Rosenwasser aromatisierten Zuckersirup.", 
+            fr: "Douces boulettes de lait frites et trempées dans un sirop de sucre chaud parfumé à la rose et à la cardamome.", 
+            zh: "手工揉制的奶固体小丸子，炸至金黄后浸泡在温热的藏红花、小豆蔻和玫瑰糖浆中，口感甜糯。", 
+            hi: "मावे (खोया) से बने नरम, सुनहरे तले हुए गुलाब जामुन, जिन्हें इलायची और गुलाब जल की चाशनी में डुबोया गया है।" 
+        }
+    },
+    {
+        price: "€5.00", img: "image/8f bi.jpg",
+        name: { 
+            es: "Brownie con Helado [V]", 
+            en: "Brownie with Ice Cream [V]", 
+            pt: "Brownie com Sorvete [V]", 
+            de: "Brownie mit Eiscreme [V]", 
+            fr: "Brownie avec Glace [V]", 
+            zh: "巧克力布朗尼伴冰淇淋 (Brownie with Ice Cream) [V]", 
+            hi: "ब्राउनी विथ आइसक्रीम [V]" 
+        },
+        desc: { 
+            es: "Brownie de chocolate caliente y denso servido con una bola de helado cremoso de vainilla.", 
+            en: "Rich, warm chocolate brownie served alongside a scoop of creamy vanilla ice cream.", 
+            pt: "Brownie de chocolate rico e quente servido com uma bola de gelado cremoso de baunilha.", 
+            de: "Reichhaltiger, warmer Schokoladen-Brownie, serviert mit einer Kugel cremigem Vanilleeis.", 
+            fr: "Brownie au chocolat riche et chaud servi avec une boule de glace crémeuse à la vanille.", 
+            zh: "浓郁温热的烤巧克力布朗尼蛋糕，搭配一球冰凉丝滑的香草冰淇淋，冰火交融。", 
+            hi: "मखमली और गाढ़ी गर्म चॉकलेट ब्राउनी, जिसे मलाईदार वैनिला आइसक्रीम के एक स्कूप के साथ परोसा जाता है।" 
+        }
+    },
+    {
+        price: "€3.50", img: "image/8g s.jpeg",
+        name: { 
+            es: "Soan Papdi [V]", 
+            en: "Soan Papdi [V]", 
+            pt: "Soan Papdi [V]", 
+            de: "Soan Papdi [V]", 
+            fr: "Soan Papdi [V]", 
+            zh: "印式酥糖 (Soan Papdi) [V]", 
+            hi: "सोन पापड़ी [V]" 
+        },
+        desc: { 
+            es: "Dulce tradicional indio de textura hojaldrada y crujiente que se derrite en la boca, hecho con harina de garbanzo, pistachos y almendras.", 
+            en: "Traditional flaky, crisp Indian sweet that melts in your mouth, garnished with pistachios and almonds.", 
+            pt: "Doce tradicional indiano de textura folhada e crocante que derrete na boca, decorado com pistaches e amêndoas.", 
+            de: "Traditionelle, blättrig-knusprige indische Süßigkeit, die im Mund zergeht, garniert mit Pistazien und Mandeln.", 
+            fr: "Douceur indienne traditionnelle, feuilletée et croustillante, qui fond dans la bouche, garnie de pistaches et d'amandes.", 
+            zh: "一种由鹰嘴豆粉制成的层叠丝缕状传统印度甜点，入口即化，表面撒有开心果和扁桃仁碎。", 
+            hi: "बेसन और घी से बनी परतदार और कुरकुरी पारंपरिक मिठाई जो मुंह में जाते ही घुल जाती है, पिस्ता और बादाम से सजी।" 
+        }
+    },
+],
+// 9. ESPECIAL DEL CHEF (ஷெஃப் ஸ்பெஷல்)
+dish9: [
+{
+price: "€5.00", img: "image/2c ob.jpeg",
 name: { es: "Pakoras / Bhajis [V]", en: "Pakoras / Bhajis [V]", pt: "Pakoras / Bhajis [V]", de: "Pakoras / Bhajis [V]", fr: "Pakoras / Bhajis [V]", zh: "蔬菜 帕科拉/巴吉炸 [V]", hi: "पकोड़ा / भजिया [V]" },
 desc: { es: "Frituras de vegetales a base de cebolla crujientes.", en: "Crispy vegetable fritters made with onions.", pt: "Fritos de vegetais crocantes à base de cebola.", de: "Knusprige Gemüse-Fritten auf Zwiebelbasis.", fr: "Beignets de légumes croustillants à base d'oignon.", zh: "香脆的洋葱及碎蔬菜鹰嘴豆面糊炸物。", hi: "बेसन में लपेटकर तली हुई कुरकुरी कटी हुई प्याज की भजिया।" }
 },
@@ -270,14 +1808,14 @@ name: { es: "Ensalada India", en: "Indian Salad", pt: "Salada Indiana", de: "Ind
 desc: { es: "Repollo rallado con semillas de mostaza tostadas y aderezo cítrico.", en: "Shredded cabbage with toasted mustard seeds and citrus dressing.", pt: "Repolho ralado com sementes de mostarda tostadas e molho cítrico.", de: "Geraspelter Kohl mit gerösteten Senfkörnern und Zitrus-Dressing.", fr: "Chou râpé avec des graines de moutarde torréfiées et une vinaigrette aux agrumes.", zh: "爽脆椰菜丝拌入香焙芥末籽及清新柑橘酱汁。", hi: "भुने हुए राई के दानों और नींबू के रस के साथ कद्दूकस की गई ताज़ा पत्तागोभी का सलाद।" }
 },
 {
-price: "€6.00", img: "image/globjamun.jpg",
+price: "€6.00", img: "image/8e gb.jpg",
 name: { es: "Gulab Jamun Casero", en: "Homemade Gulab Jamun", pt: "Gulab Jamun Caseiro", de: "Hausgemachtes Gulab Jamun", fr: "Gulab Jamun Maison", zh: "家常糖浸奶球", hi: "घर का बना गुलाब जामुन" },
 desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatizado con cardamomo y agua de rosas.", en: "Milk solid dumplings soaked in sweet syrup flavored with cardamom and rose water.", pt: "Bolinhos de sólidos lácteos embebidos em xarope doce aromatizado com cardamomo e água de rosas.", de: "Milchbällchen eingeweicht in süßem Sirup, aromatisiert mit Kardamom und Rosenwasser.", fr: "Beignets de solides de lait trempés dans un sirop doux aromatisé a la cardamome et à l'eau de rose.", zh: "传统浓缩奶丸经油炸后浸入小豆蔻与玫瑰水风味的甜糖浆中。", hi: "मावे से बने गोल जामुन जो इलायची और गुलाब जल की मीठी चाशनी में अच्छी तरह डूबे हों।" }
-}
+},
 ],
 
-                                  // 6. ஆறாவது பிரிவு: ESPECIAL DE NAVIDAD (கிறிஸ்துமஸ் மெனு - முதல் 5 உணவுகள்)
-            dish6: [
+        // 10xz. ஆறாவது பிரிவு: ESPECIAL DE NAVIDAD (கிறிஸ்துமஸ் மெனு - முதல் 5 உணவுகள்)
+            dish10: [
                 // 1. Sopa de fideos con verduras
                 {
                     price: " ", 
@@ -304,7 +1842,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 2. Sopa Manchow de pollo
                 {
                     price: " ", 
-                    img: "image/csp.jpg",
+                    img: "image/1c cs.jpg",
                     name: { 
                         es: "🍲 Sopa Manchow de pollo", 
                         en: "🍲 Chicken Manchow Soup", 
@@ -442,7 +1980,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 8. Papdam
                 {
                     price: " ", 
-                    img: "image/appalam.jpg",
+                    img: "image/3c a.jpg",
                     name: { 
                         es: "🫓 Papdam", 
                         en: "🫓 Papdam", 
@@ -718,7 +2256,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 20. Sarson Ka Sag
                 {
                     price: " ", 
-                    img: "image/sk.jpg",
+                    img: "image/5i sk.jpg",
                     name: { 
                         es: "🌿 Sarson Ka Sag", 
                         en: "🌿 Sarson Ka Sag", 
@@ -764,7 +2302,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 22. Butter Chicken
                 {
                     price: " ", 
-                    img: "image/butter chiken.jpg",
+                    img: "image/5l bc.jpg",
                     name: { 
                         es: "🧈 Butter Chicken", 
                         en: "🧈 Butter Chicken", 
@@ -810,7 +2348,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 24. Chicken Sag
                 {
                     price: " ", 
-                    img: "image/cs.jpg",
+                    img: "image/5r cs.jpg",
                     name: { 
                         es: "🥬 Chicken Sag", 
                         en: "🥬 Chicken Sag", 
@@ -903,7 +2441,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 // 28. Gulab Jamun casero
                 {
                     price: " ", 
-                    img: "image/globjamun.jpg",
+                    img: "image/8e gb.jpg",
                     name: { 
                         es: "🧆 Gulab Jamun casero", 
                         en: "🧆 Homemade Gulab Jamun", 
@@ -972,24 +2510,15 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
 
 		
                 }
-            ]
-        }; // <-- இந்த அடைப்புக்குறி உங்களுடைய மொத்த மெனு பட்டியலையும் முடித்து வைக்கும்
+            ]        }; // <-- இந்த அடைப்புக்குறி உங்களுடைய மொத்த மெனு பட்டியலையும் முடித்து வைக்கும்
 
 
-
-        // ----------------------------------------------------
-        // இந்த இடத்திலிருந்து கீழே உள்ள புதிய செயல்பாடுகளை மட்டும் மாற்றவும்
-        // ----------------------------------------------------
-
-               // =====================================================================
-        // ஒருங்கிணைக்கப்பட்ட புதிய மொழி மாற்றும் செயல்பாடு (All-in-One Function)
-        // =====================================================================
-               // =====================================================================
+                // =====================================================================
         // ஒருங்கிணைக்கப்பட்ட புதிய மொழி மாற்றும் செயல்பாடு (All-in-One Function)
         // =====================================================================
         function switchLanguage() {
             const selectedLanguage = document.getElementById("language-dropdown").value;
-            const items = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6"];
+            const items = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6","dish7","dish8","dish9","dish10"];
             
             // 1. முதன்மைப் பக்க கார்டுகளின் பெயர்களை மாற்றுதல் (Menu Items Change)
             items.forEach(itemId => {
@@ -1043,7 +2572,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
                 window.scrollTo(0, currentScroll);
             }
         }
-
+       
         // உள் பக்கத்தில் அனைத்து பிரிவுகளையும் (20, 20 ஐட்டங்களாக) வரிசையாக உருவாக்கும் செயல்பாடு
                // உள் பக்கத்தில் அனைத்து பிரிவுகளையும், மேல் மெனு பாரையும், மற்றும் உங்களது அசல் உணவுகளையும் உருவாக்கும் செயல்பாடு
               // [object Object] என்ற பிழையைச் சரிசெய்து உணவுகளின் பெயர்களைக் காட்டும் புதிய செயல்பாடு
@@ -1055,7 +2584,7 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
             container.innerHTML = ""; // பழைய விபரங்களை அழிக்க
             navBar.innerHTML = "";    // பழைய மெनु பட்டன்களை அழிக்க
 
-            const allDishes = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6"];
+            const allDishes = ["dish1", "dish2", "dish3", "dish4", "dish5", "dish6","dish7","dish8","dish9","dish10"];
 
             // 1. மேல் மெனு பட்டன்களை உருவாக்குதல்
             allDishes.forEach(id => {
@@ -1162,8 +2691,8 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
 <div class="map-center-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.9380654699594!2d-8.5415424240405!3d42.88138927114931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2effd316384c0f%3A0x67c39f5cca59dc8e!2sCamino%20Curry!5e1!3m" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
+<!-- லோகோ படங்கள் மட்டுமே கொண்ட சமூக ஊடக பகுதி (Images Only - No Text) -->
 <div class="social-media-footer">
-    <!-- 7 மொழிகளுக்கான தானியங்கி தலைப்பு குறியீடு -->
     <p id="social-title" 
        data-lang-es="Síguenos" 
        data-lang-en="Follow us" 
@@ -1177,20 +2706,19 @@ desc: { es: "Buñuelos de sólidos lácteos empapados en almíbar dulce aromatiz
     
     <div class="social-links-container">
         <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=61570884321356" target="_blank" class="social-btn fb-color">
-            <img src="image/fb.png" alt="Facebook" class="social-img-icon">
+        <a href="YOUR_FACEBOOK_LINK" target="_blank" class="social-btn fb-color">
+            <img src="image/fb.png" class="social-img-icon">
         </a>
         <!-- Instagram -->
-        <a href="https://www.instagram.com/caminocurry?exln=eWhmaHQ5eDV4ZW9w" target="_blank" class="social-btn insta-color">
-            <img src="image/insta.jpg" alt="Instagram" class="social-img-icon">
+        <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="social-btn insta-color">
+            <img src="image/insta.jpg" class="social-img-icon">
         </a>
         <!-- TikTok -->
         <a href="YOUR_TIKTOK_LINK" target="_blank" class="social-btn tiktok-color">
-            <img src="tiktok-icon.png" alt="TikTok" class="social-img-icon">
+            <img src="tiktok-icon.png" class="social-img-icon">
         </a>
     </div>
 </div>
-
 
 
     </body>
