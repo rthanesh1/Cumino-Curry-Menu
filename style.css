@@ -8,10 +8,25 @@
 }
 
 body {
-    background-color:#FF4500; 
+    /* 🟧 உங்களின் அசல் அடர் ஆரஞ்சு பின்னணி நிறம் */
+    background-color: #FF4500; 
+    
+    /* 🎨 ✅ புதிய நிறம் (rgba 0.08-லிருந்து 0.16 ஆக பிரகாசம் கூட்டப்பட்டுள்ளது) மற்றும் பெரிய எழுத்து அளவு (font-size 11px-லிருந்து 14px ஆக கூட்டப்பட்டுள்ளது) */
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27260%27%20height%3D%27160%27%20viewBox%3D%270%200%20260%20160%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20font-family%3D%27Poppins%2C%20sans-serif%27%20font-size%3D%2714%27%20font-weight%3D%27600%27%20fill%3D%27rgba%28255%2C%20255%2C%20255%2C%200.16%29%27%20text-anchor%3D%27middle%27%20transform%3D%27rotate%28-20%20130%2080%29%27%3ECamino%20Curry%3C%2Ftext%3E%3C%2Fsvg%3E");
+    
+    background-repeat: repeat;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    
+    /* 🚀 மெதுவாக அனிமேஷன் ஆகும் வரி */
+    animation: animatedBackground 60s linear infinite; 
+}
+
+/* 🔄 பின்னணி உரை மேலிருந்து கீழ்நோக்கி நகரும் இயக்கம் */
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 1000px; }
 }
 
 .navbar {
@@ -85,15 +100,27 @@ body {
 .dish-card {
     position: relative;
     height: 250px;
-    border-radius: 12px;
+    border-radius: 0px; /* 🔳 டிஷூம் ஸ்டைல் பார்டருக்கு வளைந்த ஓரங்களை விட நேர் ஓரங்கள் (0px) மிக அழகாக இருக்கும் */
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-    border: 1px solid #ffffff; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
     background-color: #ffffff; 
     cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    /* 🔽 முழு மெனு பாக்ஸிற்கும் இரட்டை பார்டர் கொடுக்கும் புதிய வரிகள் 🔽 */
+    border: 1px solid #111111;   /* 1. வெளிப்புற மெல்லிய கருப்பு பார்டர் */
+    outline: 3px solid #ffffff;   /* 2. நடுவே உள்ள வெள்ளை இடைவெளி */
+    box-shadow: 0 0 0 4px #dfb76c; /* 3. உட்புறம் இருக்கும் உங்களது தங்க நிற பார்டர் */
 }
 
+/* மவுஸ் வைக்கும் போது கார்டு லேசாக மாறும் ஸ்டைல் (Hover effect) */
+.dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 0 4px #111111; /* மவுஸ் வைக்கும் போது பார்டர் அடர் கருப்பாக மாறும் */
+}
 .dish-card:hover {
     transform: translateY(-5px);
     border-color: #dfb76c;
@@ -177,13 +204,8 @@ body {
 }
 
 .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
-    z-index: 1;
+    /* 🔽 சாம்பல் நிற நிழலை முழுமையாக மறைக்க இந்த ஒரு வரி போதும் 🔽 */
+    display: none; 
 }
 
 .dish-img {
@@ -199,16 +221,22 @@ body {
 
 .dish-title {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 2;
-    font-size: 20px;
-    font-weight: 500;
+    top: 15px; /* 🔝 பாட்டமிற்கு பதிலாக மேலே கொண்டு வரப்பட்டது */
+    left: 15px;
+    z-index: 5;
+    font-size: 15px; /* எழுத்துக்களின் கச்சிதமான அளவு */
+    font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-left: 3px solid #dfb76c;
-    padding-left: 10px;
+    color: #111111; /* அடர் கருப்பு நிற எழுத்துக்கள் */
+    
+    /* ⚪ நீங்கள் கேட்ட சுத்தமான வெள்ளை பின்னணி */
+    background-color: #ffffff; 
+    padding: 6px 14px;
+    
+   
 }
+
 
 .grey-text {
     color: #777777 !important;
@@ -517,13 +545,29 @@ body {
 }
 
 #social-title {
+    /* 🔽 எழுத்துக்களை மெனு கார்டு போன்ற பாக்ஸ் ஸ்டைலாக மாற்றும் வரிகள் 🔽 */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    /* ⚪ சுத்தமான வெள்ளை பின்னணி (White Background) */
+    background-color: #ffffff !important; 
+    padding: 6px 16px !important; /* பாக்ஸிற்குள் இருக்கும் கச்சிதமான இடைவெளி */
+    margin-bottom: 25px !important; /* கீழே இருக்கும் ஐகான்களுக்கும் இதற்கும் உள்ள இடைவெளி */
+    border-radius: 0px !important; /* கிளாசிக் நேர் ஓரங்கள் */
+    
+    /* 🔤 எழுத்து வடிவமைப்பு */
     font-family: 'Poppins', sans-serif !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
-    color: #777777 !important;
-    margin-bottom: 20px !important;
+    color: #111111 !important; /* அடர் கருப்பு நிற எழுத்துக்கள் */
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
+    
+    /* 🔳 மெனு கார்டுகளில் உள்ள அதே துல்லியமான இரட்டை பார்டர் அமைப்பு */
+    border: 1px solid #111111 !important;   /* 1. வெளிப்புற மெல்லிய கருப்பு பார்டர் */
+    outline: 2px solid #ffffff !important;   /* 2. நடுவே உள்ள வெள்ளை இடைவெளி */
+    box-shadow: 0 0 0 3px #dfb76c !important; /* 3. உட்புறம் இருக்கும் உங்களது பிராண்ட் தங்க நிற பார்டர் */
 }
 
 .social-links-container {
@@ -614,4 +658,132 @@ body {
         filter: drop-shadow(0 0 0 rgba(46, 125, 50, 0));
     }
 }
+/* ==========================================================================
+   உங்களது சிஎஸ்எஸ் கோப்பின் கடைசியில் இணைக்க வேண்டிய 10 அனிமேஷன் அடுக்குகள்
+   ========================================================================== */
 
+/* பொதுவான ஐகான் பாக்ஸ் அமைப்பு */
+.menu-anim-box {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 26px;
+    height: 24px;
+}
+
+/* 1. சூப் அனிமேஷன் */
+.soup-anim .anim-bowl { width: 20px; height: 10px; background: #dfb76c; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; position: absolute; bottom: 2px; }
+.soup-anim .anim-steam { display: flex; gap: 2px; position: absolute; top: 2px; }
+.soup-anim .s-line { width: 1.5px; height: 6px; background: #dfb76c; opacity: 0; animation: steamMove 2s infinite linear; }
+.soup-anim .s-line:nth-child(2) { animation-delay: 0.4s; }
+.soup-anim .s-line:nth-child(3) { animation-delay: 0.8s; }
+@keyframes steamMove { 0% { transform: translateY(5px); opacity: 0; } 50% { opacity: 0.6; } 100% { transform: translateY(-3px); opacity: 0; } }
+
+/* 2. ஸ்டார்ட்டர் அனிமேஷன் */
+.starter-anim .anim-flame { font-size: 14px; animation: flameBurn 1.5s infinite ease-in-out; }
+@keyframes flameBurn { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.2) translateY(-2px); } }
+
+/* 3. சைட் டிஷ் அனிமேஷன் */
+.side-anim .anim-fork { font-size: 14px; animation: forkSwing 2s infinite ease-in-out; }
+@keyframes forkSwing { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(15deg) translateY(-1px); } }
+
+/* 4. வேகன் அனிமேஷன் */
+.vegan-anim .anim-sprout { font-size: 16px; animation: sproutPulse 2s infinite ease-in-out; }
+@keyframes sproutPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+
+/* 5. மெயின் கோர்ஸ் அனிமேஷன் */
+.main-course-anim .anim-cloche { font-size: 15px; animation: clocheRing 2.5s infinite ease-in-out; }
+@keyframes clocheRing { 0%, 100% { transform: rotate(0); } 20%, 60% { transform: rotate(-10deg); } 40%, 80% { transform: rotate(10deg); } }
+
+/* 6. பிரியாணி அனிமேஷன் */
+.biryani-anim .anim-b-steam { font-size: 10px; position: absolute; top: -3px; animation: bSteam 1.8s infinite ease-in-out; }
+.biryani-anim .anim-pot { font-size: 16px; position: absolute; bottom: 0; }
+@keyframes bSteam { 0%, 100% { opacity: 0.3; transform: translateY(1px); } 50% { opacity: 1; transform: translateY(-2px); } }
+
+/* 7. ரொட்டி அனிமேஷன் */
+.bread-anim .anim-rolling-pin { font-size: 15px; animation: rotiRoll 3s infinite linear; }
+@keyframes rotiRoll { 0%, 100% { transform: translateX(-2px) rotate(-5deg); } 50% { transform: translateX(2px) rotate(5deg); } }
+
+/* 8. ட்ரிங்க்ஸ் அனிமேஷன் */
+.drinks-anim .anim-glass { font-size: 15px; z-index: 1; }
+.drinks-anim .anim-ice-cube { font-size: 8px; position: absolute; top: -4px; animation: iceDrop 2s infinite ease-in; }
+@keyframes iceDrop { 0% { transform: translateY(0) opacity: 1; } 50%, 100% { transform: translateY(8px); opacity: 0; } }
+
+/* 9. செஃப் ஸ்பெஷல் */
+.chefs-anim .anim-hat { font-size: 16px; animation: chefNod 2s infinite ease-in-out; }
+@keyframes chefNod { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px) scale(1.05); } }
+
+/* 10. கிறிஸ்மஸ் ஸ்பெஷல் */
+.xmas-anim .anim-tree { font-size: 15px; z-index: 1; }
+.xmas-anim .anim-snow { font-size: 8px; position: absolute; top: -2px; animation: snowFall 2.5s infinite linear; }
+@keyframes snowFall { 0% { transform: translateY(0) translateX(0); opacity: 1; } 100% { transform: translateY(12px) translateX(3px); opacity: 0; } }
+
+
+/* ==========================================================================
+   10 மெனு புகைப்படங்களுக்கான 10 பிரத்யேக ஓவர்லே அனிமேஷன் CSS
+   ========================================================================== */
+
+/* பொதுவான ஓவர்லே கட்டமைப்பு */
+.photo-overlay-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* 1. SOPAS (துல்லியமான மெல்லிய ஆவிப் புகை) */
+.soup-vapour .v-wave { position: absolute; bottom: 10px; left: 40%; width: 4px; height: 40px; background: linear-gradient(to top, rgba(255,255,255,0.3), rgba(255,255,255,0)); filter: blur(3px); border-radius: 50%; animation: pVapour 2.5s infinite linear; }
+.soup-vapour .v-wave:nth-child(2) { left: 50%; animation-delay: 0.6s; width: 6px; }
+.soup-vapour .v-wave:nth-child(3) { left: 60%; animation-delay: 1.2s; width: 3px; }
+@keyframes pVapour { 0% { transform: translateY(20px) scaleY(0.5); opacity: 0; } 50% { opacity: 0.4; transform: translateY(5px) skewX(-4deg); } 100% { transform: translateY(-20px) scaleY(1.2); opacity: 0; } }
+
+/* 2. STARTERS (லேசான பொன்னிற தணல் ஒளி) */
+.starter-spark { background: linear-gradient(to top, rgba(223, 183, 108, 0.1), rgba(0,0,0,0)); transition: opacity 0.3s; opacity: 0; }
+.item-card:hover .starter-spark, .dish-card:hover .starter-spark { opacity: 1; }
+
+/* 3. SIDE DISHES (மவுஸ் வைக்கும் போது லேசான மிதப்பு அனிமேஷன்) */
+.item-card:hover .item-thumb, .dish-card:hover .dish-img { transform: scale(1.04); }
+
+/* 4. VEGANO (பச்சை இலைகள் காற்றில் மிதப்பது போல்) */
+.vegan-leaves .v-leaf { position: absolute; color: #2e7d32; font-size: 12px; opacity: 0; animation: leafFloat 3s infinite linear; }
+.vegan-leaves .v-leaf:nth-child(1) { left: 20%; animation-delay: 0s; }
+.vegan-leaves .v-leaf:nth-child(2) { left: 70%; animation-delay: 1.5s; }
+@keyframes leafFloat { 0% { bottom: -10px; opacity: 0; transform: rotate(0deg); } 50% { opacity: 0.7; } 100% { bottom: 90px; opacity: 0; transform: rotate(180deg) translateX(10px); } }
+
+/* 5. PLATOS PRINCIPALES (சூடான கறி குமிழ்கள் கொதிப்பது போல்) */
+.curry-bubble .bubble { position: absolute; bottom: 5px; width: 6px; height: 6px; background: rgba(223, 183, 108, 0.4); border-radius: 50%; animation: bubbleUp 2s infinite ease-in; opacity: 0; }
+.curry-bubble .bubble:nth-child(1) { left: 30%; animation-delay: 0s; }
+.curry-bubble .bubble:nth-child(2) { left: 50%; animation-delay: 0.7s; }
+.curry-bubble .bubble:nth-child(3) { left: 70%; animation-delay: 1.4s; }
+@keyframes bubbleUp { 0% { transform: translateY(0); opacity: 0; } 50% { opacity: 0.6; } 100% { transform: translateY(-40px); opacity: 0; } }
+
+/* 6. ARROZ Y BIRYANI (பிரியாணி ஆவி புகை அலை) */
+.biryani-steam .b-wave { position: absolute; bottom: 5px; left: 45%; width: 8px; height: 30px; background: rgba(255,255,255,0.2); filter: blur(4px); border-radius: 50%; animation: bSteamMove 2s infinite linear; }
+.biryani-steam .b-wave:nth-child(2) { left: 55%; animation-delay: 1s; }
+@keyframes bSteamMove { 0% { transform: translateY(15px); opacity: 0; } 50% { opacity: 0.5; } 100% { transform: translateY(-15px) scaleX(1.5); opacity: 0; } }
+
+/* 7. BREAD & ROTI (ரோலிங் ஜூம் எஃபெக்ட்) */
+.bread-zoom { transition: all 0.4s ease; }
+
+/* 8. DRINKS AND DESSERTS (குளிர்ச்சியான பனி புகை) */
+.drinks-chill .frost { position: absolute; top: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%); opacity: 0; animation: chillGlow 3s infinite ease-in-out; }
+@keyframes chillGlow { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.5; } }
+
+/* 9. CHEF'S SPECIAL (மின்னுவது போன்ற பிரீமியம் நட்சத்திரங்கள்) */
+.chef-stars .star { position: absolute; color: #dfb76c; font-size: 10px; opacity: 0; animation: starTwinkle 2s infinite ease-in-out; }
+.chef-stars .star:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+.chef-stars .star:nth-child(2) { top: 60%; right: 20%; animation-delay: 1s; }
+@keyframes starTwinkle { 0%, 100% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.2); } }
+
+/* 10. CHRISTMAS SPECIAL (மெதுவாக கார்டிற்குள் விழும் பனித்துளிகள்) */
+.xmas-snow .snowflake { position: absolute; color: #ffffff; font-size: 10px; top: -10px; opacity: 0; animation: snowDrop 3s infinite linear; }
+.xmas-snow .snowflake:nth-child(1) { left: 25%; animation-delay: 0s; }
+.xmas-snow .snowflake:nth-child(2) { left: 50%; animation-delay: 1s; }
+.xmas-snow .snowflake:nth-child(3) { left: 75%; animation-delay: 2s; }
+@keyframes snowDrop { 0% { transform: translateY(0) rotate(0deg); opacity: 0; } 20% { opacity: 0.8; } 100% { transform: translateY(110px) rotate(90deg); opacity: 0; } }
