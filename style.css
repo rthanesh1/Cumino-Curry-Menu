@@ -198,10 +198,16 @@ body {
         gap: 12px !important;
     }
 
+      /* 🔽 நீங்கள் இப்போது மாற்றிய புதிய திருத்தப்பட்ட பகுதி 🔽 */
     .dish-card {
         height: 180px !important;
-        padding: 0 !important; /* மொபைலில் படம் முழுமையாகத் தெரிய */
+        padding: 6px !important; 
+        border-radius: 0px !important;
+        border: 1px solid #111111 !important;   
+        outline: 2px solid #ffffff !important;   
+        box-shadow: 0 0 0 3px #dfb76c !important; 
     }
+
 
     .dish-title {
         position: absolute !important;
