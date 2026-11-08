@@ -220,11 +220,11 @@ body {
         max-width: calc(100% - 16px) !important;
         
         /* ⚪ தூய வெள்ளை பின்னணி */
-        background-color: #E944F8 !important; 
+        background-color: #91048f !important; 
         padding: 4px 8px !important; /* மொபைலுக்கான கச்சிதமான சிறிய இடைவெளி */
         font-size: 10px !important; /* 🔤 புகைப்படத்தை மறைக்காமல் இருக்க எழுத்தின் அளவு சிறியதாக்கப்பட்டுள்ளது */
         font-weight: 700 !important;
-        color: #111111 !important;
+        color: #ffffff !important;
         text-transform: uppercase !important;
         letter-spacing: 0.5px !important;
         box-sizing: border-box !important;
